@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-x: hidden;
+}
 /* navbar section  */
 .logo h1{
     background-color: #4158D0;
@@ -55,4 +58,45 @@ nav .logo i{
         justify-content: space-between;
         flex-direction: row;
     }
+    .account{
+        top: 30px;
+        right: 0px;
+    }
+    .account::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: white;
+        position: absolute;
+       top: -4.5%;
+       right: 10%;
+       border-radius: 3px;
+       transform: rotate(45deg);
+       border-left: 1px solid #D4D4D8;
+       border-top: 1px solid #D4D4D8;
+    }
+}
+.account{
+    right: 20px;
+    box-shadow: -1px 0px 1px rgba(3, 7, 18, 0.01),
+      -3px 2px 5px rgba(3, 7, 18, 0.02),
+      -6px 4px 11px rgba(3, 7, 18, 0.03),
+      -10px 7px 20px rgba(3, 7, 18, 0.04),
+      -16px 11px 31px rgba(3, 7, 18, 0.05);
+    }
+.account::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+   top: -4.5%;
+   left: 50%;
+   border-radius: 3px;
+   transform: rotate(45deg);
+   border-left: 1px solid #D4D4D8;
+   border-top: 1px solid #D4D4D8;
+}
+.logout{
+    border-radius: 0 0 16px 16px;
 }

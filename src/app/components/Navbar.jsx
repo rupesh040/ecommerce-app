@@ -19,7 +19,7 @@ const Navbar = () => {
        <i class="ri-search-2-line text-black cursor-pointer text-xl active:scale-90"></i>
       </div>
 
-      <div className="cart  flex gap-5 items-center justify-center"> <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg ">{!logIn? "Login" : "Account " }</div><i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg"></i></div>
+      <div className="cart  flex gap-5 items-center justify-center"> <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer">{!logIn? "Login" : "Account " }</div><i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer"></i></div>
     </nav>
   )
 }
