@@ -59,21 +59,14 @@ nav .logo i{
         flex-direction: row;
     }
     .account{
-        top: 30px;
-        right: 0px;
+        top: 45px;
+        right: -20px;
     }
     .account::after{
-        content: "";
-        width: 20px;
-        height: 20px;
-        background: white;
-        position: absolute;
-       top: -4.5%;
-       right: 10%;
-       border-radius: 3px;
-       transform: rotate(45deg);
-       border-left: 1px solid #D4D4D8;
-       border-top: 1px solid #D4D4D8;
+        display: none;
+    }
+    .banner{
+        border-radius: 0px !important;
     }
 }
 .account{
@@ -99,4 +92,12 @@ nav .logo i{
 }
 .logout{
     border-radius: 0 0 16px 16px;
+}
+
+
+/* banner sectiion  */
+
+.banner{
+    margin:20px auto;
+    border-radius: 16px;
 }

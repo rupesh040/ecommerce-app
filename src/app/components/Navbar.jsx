@@ -1,13 +1,13 @@
 "use client"
 import React, { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({btnOn}) => {
     const [logIn ,setLogIn] = useState(true);
   return (
     <nav className='flex justify-between items-center  border-b-[1px] border-zinc-200 '>
       <div className="logo">
         <h1 className='text-4xl font-bold'>LOGO</h1>
-        <i class="ri-account-circle-fill text-4xl cursor-pointer"></i>
+        <i class="ri-account-circle-fill text-4xl cursor-pointer" onClick={btnOn}></i>
       </div>
       <div className="address relative cursor-pointer">
         <h2 className='font-bold text-xl'>Delivery in 10 minutes</h2>
@@ -19,7 +19,7 @@ const Navbar = () => {
        <i class="ri-search-2-line text-black cursor-pointer text-xl active:scale-90"></i>
       </div>
 
-      <div className="cart  flex gap-5 items-center justify-center"> <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer">{!logIn? "Login" : "Account " }</div><i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer"></i></div>
+      <div className="cart  flex gap-5 items-center justify-center">{!logIn? <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer">Login</div> : <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer" onClick={btnOn}>Account</div> } <i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer"></i></div>
     </nav>
   )
 }
