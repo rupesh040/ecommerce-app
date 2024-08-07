@@ -2,32 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* navbar section  */
+.logo h1{
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+/* text-shadow: 0px 1px 1px rgba(3, 7, 18, 0.16),
+  0px 2px 2px rgba(3, 7, 18, 0.13),
+  0px 4px 4px rgba(3, 7, 18, 0.10),
+  0px 8px 8px rgba(3, 7, 18, 0.06),
+  0px 16px 16px rgba(3, 7, 18, 0.03); */
+}
+nav{
+    padding: 16px 28px;
+    gap: 20px;
+}
+nav .search{
+    width: 700px;
+}
+nav .logo i{
+    display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@media (max-width:1080px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 10px;
+        gap: 5px;
+    }
+    nav .address{
+        display: none;
+    }
+    nav .cart{
+        display: none;
+    }
+    nav .search{
+        width: 100%;
+    }
+    nav .logo i{
+        display: block;
+    }
+    nav .logo{
+        width: 100%;
+        padding: 0 10px ;
+    }
+    nav .logo{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
