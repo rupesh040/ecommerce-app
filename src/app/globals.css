@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    overflow-x: hidden;
-}
 /* navbar section  */
 .logo h1{
     background-color: #4158D0;
@@ -100,4 +97,7 @@ nav .logo i{
 .banner{
     margin:20px auto;
     border-radius: 16px;
+}
+.cro{
+    scrollbar-width: none;
 }

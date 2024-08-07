@@ -6,6 +6,7 @@ import Overlay from "./components/Overlay";
 import { useState } from "react";
 import Account from "./components/Account";
 import Banner from "./components/Banner";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
     const [overlay ,setOverlay] = useState(false);
@@ -19,6 +20,7 @@ export default function Home() {
 
 {!overlay?null:<Overlay btn={trueFalse} />}
 <Banner/>
+<Carousel/>
   </>
   );
 }
