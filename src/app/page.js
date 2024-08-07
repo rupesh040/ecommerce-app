@@ -26,7 +26,7 @@ export default function Home() {
         else{alert("error")}
     },[]);
     useEffect(()=>{
-        fetch(`https://geocode.maps.co/reverse?${latitude}&${longitude}&api_key=66b3975fa6904022042036iwv2f903c`)
+        fetch(`https://us1.locationiq.com/v1/reverse?key=pk.d65daa148cda8080fcaf739ab8440f65&lat=${latitude}&lon=-${longitude}&format=json&`)
         .then(res => res.json())
         .then(data => setGeo(data));
     },[]);
@@ -39,6 +39,7 @@ export default function Home() {
 {!overlay?null:<Overlay btn={trueFalse} />}
 <Banner/>
 <Carousel/>
+<h1>{geo.display_name}</h1>
   </>
   );
 }
