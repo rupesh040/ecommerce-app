@@ -1,8 +1,28 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Navbar = ({btnOn}) => {
     const [logIn ,setLogIn] = useState(true);
+    const[id,setId]=useState(0);
+    const placeholders = [
+        'Search "chocolate"',
+        'Search "egg"',
+        'Search "curd"',
+        'Search "milk"',
+        'Search "rice"',
+        'Search "Salt"',
+    ];
+
+    for(let i=0; i <= placeholders.length; i++){
+        if(id === placeholders.length){
+            setId(0);
+        }
+        else{
+            setTimeout(() => {
+                setId(id+1);
+            }, 2000);
+        }
+    }
   return (
     <nav className='flex justify-between items-center  border-b-[1px] border-zinc-200 '>
       <div className="logo">
@@ -15,7 +35,7 @@ const Navbar = ({btnOn}) => {
         <i class="ri-arrow-drop-down-fill absolute top-[40%] left-[95%] text-4xl"></i>
       </div>
       <div className="search  px-4 py-2 flex gap-2  rounded-lg h-[47] border-[1px] border-zinc-300 bg-zinc-100">
-       <input type="text" className='outline-none w-[95%] bg-transparent border-r-[1px] border-zinc-500' placeholder='Search Anything you want'/>
+       <input type="text" className='outline-none w-[95%] bg-transparent border-r-[1px] border-zinc-500' placeholder={placeholders[id]}/>
        <i class="ri-search-2-line text-black cursor-pointer text-xl active:scale-90"></i>
       </div>
 
