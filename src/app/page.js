@@ -32,9 +32,9 @@ const location = async (latitude,longitude) =>{
     .then(res => res.json())
     .then(data => setGeo(data.results[0]));
 }
-  useEffect( () =>{
-        location(latitude,longitude);
-    },[]);
+//   useEffect( () =>{
+//         location();
+//     },[]);
     console.log(geo.formatted);
   return (
   <>
@@ -48,7 +48,7 @@ const location = async (latitude,longitude) =>{
 <div className=" max-w-[1180px] flex flex-wrap mx-auto gap-5 my-5 ">
 <Catecard/>
 </div>
-
+<button onClick={location}> click</button>
 <h1>{geo.formatted}</h1>
   </>
   );
