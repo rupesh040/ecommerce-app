@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-x: hidden;
+}
 /* navbar section  */
 .logo h1{
     background-color: #4158D0;

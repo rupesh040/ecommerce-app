@@ -7,12 +7,13 @@ import { useEffect, useState } from "react";
 import Account from "./components/Account";
 import Banner from "./components/Banner";
 import Carousel from "./components/Carousel";
+import Catecard from "./components/Catecard";
 
 export default function Home() {
     const [overlay ,setOverlay] = useState(false);
     const [longitude,setLongitude] = useState(null);
     const [latitude,setLatitude] = useState(null);
-    const [geo,setGeo] = useState();
+    const [geo,setGeo] = useState([]);
     const trueFalse = () =>{
         setOverlay(prevState => !prevState);
     }
@@ -25,12 +26,16 @@ export default function Home() {
         }
         else{alert("error")}
     },[]);
-    useEffect(()=>{
-        fetch(`https://geocode.maps.co/reverse?${latitude}&${longitude}&api_key=66b3975fa6904022042036iwv2f903c`)
-        .then(res => res.json())
-        .then(data => setGeo(data));
+
+const location = async (latitude,longitude) =>{
+    await  fetch(`https://api.opencagedata.com/geocode/v1/json?key=d2eb98b8df2440e4b815490738983b95&q=${latitude}%2C${longitude}&pretty=1`)
+    .then(res => res.json())
+    .then(data => setGeo(data.results[0]));
+}
+  useEffect( () =>{
+        location(latitude,longitude);
     },[]);
-    console.log(geo);
+    console.log(geo.formatted);
   return (
   <>
 <Navbar btnOn={trueFalse}/>
@@ -39,6 +44,12 @@ export default function Home() {
 {!overlay?null:<Overlay btn={trueFalse} />}
 <Banner/>
 <Carousel/>
+<h1 className=" max-w-[1180px] mx-auto p-1 mb-5 border-l-4 border-orange-500 text-2xl font-bold">Category</h1>
+<div className=" max-w-[1180px] flex flex-wrap mx-auto gap-5 my-5 ">
+<Catecard/>
+</div>
+
+<h1>{geo.formatted}</h1>
   </>
   );
 }
