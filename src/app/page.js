@@ -9,7 +9,7 @@ import Banner from "./components/Banner";
 import Carousel from "./components/Carousel";
 import Catecard from "./components/Catecard";
 import ProductCarousel from "./components/ProductCarousel";
-import Product from "./components/Product";
+
 
 export default function Home() {
     const [overlay ,setOverlay] = useState(false);
