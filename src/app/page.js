@@ -8,8 +8,6 @@ import Account from "./components/Account";
 import Banner from "./components/Banner";
 import Carousel from "./components/Carousel";
 import Catecard from "./components/Catecard";
-import ProductCarousel from "./components/ProductCarousel";
-import Product from "./components/product";
 
 export default function Home() {
     const [overlay ,setOverlay] = useState(false);
@@ -50,7 +48,6 @@ const location = async (latitude,longitude) =>{
 <div className=" max-w-[1180px] flex flex-wrap mx-auto gap-5 my-5 ">
 <Catecard/>
 </div>
-<ProductCarousel/>
   </>
   );
 }
