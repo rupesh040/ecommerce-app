@@ -27,14 +27,12 @@ export default function Home() {
         else{alert("error")}
     },[]);
 
-const location = async (latitude,longitude) =>{
-    await  fetch(`https://api.opencagedata.com/geocode/v1/json?key=d2eb98b8df2440e4b815490738983b95&q=${latitude}%2C${longitude}&pretty=1`)
-    .then(res => res.json())
-    .then(data => setGeo(data.results[0]));
-}
-//   useEffect( () =>{
-//         location();
-//     },[]);
+// const location = async (latitude,longitude) =>{
+//     await  fetch(`https://api.opencagedata.com/geocode/v1/json?key=d2eb98b8df2440e4b815490738983b95&q=${latitude}%2C${longitude}&pretty=1`)
+//     .then(res => res.json())
+//     .then(data => setGeo(data.results[0]));
+// }
+
   return (
   <>
 <Navbar btnOn={trueFalse}/>
