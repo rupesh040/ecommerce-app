@@ -8,6 +8,9 @@ import Account from "./components/Account";
 import Banner from "./components/Banner";
 import Carousel from "./components/Carousel";
 import Catecard from "./components/Catecard";
+import ProductCarousel from "./components/ProductCarousel";
+import Footer from "./components/Footer";
+
 
 export default function Home() {
     const [overlay ,setOverlay] = useState(false);
@@ -41,10 +44,11 @@ export default function Home() {
 {!overlay?null:<Overlay btn={trueFalse} />}
 <Banner/>
 <Carousel/>
-<h1 className=" max-w-[1180px] mx-auto p-1 mb-5 border-l-4 border-orange-500 text-2xl font-bold ">Category</h1>
-<div className=" max-w-[1180px] flex flex-wrap mx-auto gap-5 my-5 ">
 <Catecard/>
-</div>
+<ProductCarousel/>
+<ProductCarousel/>
+<ProductCarousel/>
+<Footer/>
   </>
   );
 }

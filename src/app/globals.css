@@ -27,6 +27,9 @@ nav .search{
 nav .logo i{
     display: none;
 }
+.Category{
+    width: 120px;
+}
 
 @media (max-width:1080px) {
     nav{
@@ -65,9 +68,24 @@ nav .logo i{
     .account::after{
         display: none;
     }
-    .banner{
-        border-radius: 0px !important;
-    }
+    .sticky-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.08),
+        0px 5px 4px rgba(3, 7, 18, 0.06),
+        0px 12px 9px rgba(3, 7, 18, 0.05),
+        0px 20px 15px rgba(3, 7, 18, 0.03),
+        0px 32px 24px rgba(3, 7, 18, 0.02);
+        transition: all 3s ease-in-out;
+      }
+      #stickylogo{
+        display: none;
+      }
+      .Category{
+        width: 100px;
+      }
 }
 .account{
     right: 20px;
@@ -103,4 +121,11 @@ nav .logo i{
 }
 .cro{
     scrollbar-width: none;
+}
+
+
+@media (min-width:600px) {
+    .fotterText{
+        display: none;
+    }
 }
