@@ -35,7 +35,6 @@ const location = async (latitude,longitude) =>{
 //   useEffect( () =>{
 //         location();
 //     },[]);
-    console.log(geo.formatted);
   return (
   <>
 <Navbar btnOn={trueFalse}/>
