@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Product from './Product';
 import { product_data } from "../../../Data/data";
-const ProductCarouselsrc  = ({img,name,weight,price}) => {
+const ProductCarouselsrc  = ({img,name,weight,price,id}) => {
   return (
     <>
-       <Product img={img} name={name} weight={weight} price={price} />
+       <Product img={img} name={name} weight={weight} id={id} price={price} />
     </>
   )
 }

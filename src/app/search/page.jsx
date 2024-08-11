@@ -10,15 +10,6 @@ import ProductCarouselsrc from '../components/ProductCarouselsrc';
 
 const page = () => {
     const [result , setResult] = useState(product_data);
-
-    const placeholders = [
-        'Search "chocolate"',
-        'Search "egg"',
-        'Search "curd"',
-        'Search "milk"',
-        'Search "rice"',
-        'Search "Salt"',
-    ];
     const searchData =  (search) => {
         console.log(search);
         let filterData = product_data;
@@ -45,7 +36,7 @@ const page = () => {
 {/* search result  */}
 <div className=" pt-5 flex flex-wrap max-w-[1180px] mx-auto  gap-4  justify-start  max-[600px]:pt-24 max-[600px]:justify-around">
   {
-    result.map((item) => <ProductCarouselsrc img={item.img} name={item.name} weight={item.weight} price={item.price}/> )
+    result.map((item) => <ProductCarouselsrc id={item.id} img={item.img} name={item.name} weight={item.weight} price={item.price}/> )
   }
 </div>
 
