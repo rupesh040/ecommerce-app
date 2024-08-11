@@ -26,8 +26,8 @@ const page = () => {
     <>
     <div className="max-w-[1180px] mx-auto bg-white p-2  max-[600px]:shadow-lg max-[600px]:w-full max-[600px]:fixed">
     <div className={`search  px-4 py-2 flex gap-2  rounded-lg h-[47] border-[1px] border-zinc-300 bg-zinc-100 justify-around items-center `}>
-        <Link href="/">
-    <i class="ri-arrow-left-line cursor-pointer text-2xl"></i></Link>
+        <div onClick={()=> window.history.back()}>
+    <i class="ri-arrow-left-line cursor-pointer text-2xl"></i></div>
        <input type="text" className='outline-none w-[95%] bg-transparent border-r-[1px] border-zinc-500' placeholder="search.." onChange={(e) => searchData(e.target.value)} autoFocus/>
        <i class="ri-search-2-line text-black cursor-pointer text-xl active:scale-90" ></i>
       </div>
