@@ -8,9 +8,7 @@ import ProductCarousel from '../components/ProductCarousel';
 import { product_data } from "../../../Data/data";
 import ProductCarouselsrc from '../components/ProductCarouselsrc';
 
-const page = ({product}) => {
-    const[id,setId]=useState(0);
-    const [search,setSearch] = useState("");
+const page = ({product,result}) => {
     const [result , setResult] = useState(product_data);
 
     const placeholders = [
@@ -33,19 +31,6 @@ const page = ({product}) => {
         }
     }
 
-    // for(let i=0; i <= placeholders.length; i++){
-    //     if(id === placeholders.length){
-    //         setId(0);
-    //     }
-    //     else{
-    //         setTimeout(() => {
-    //             setId(id+1);
-    //         }, 2000);
-    //     }
-    // }
-
-
-    console.log(result);
   return (
     <>
     <div className="max-w-[1180px] mx-auto bg-white p-2  max-[600px]:shadow-lg max-[600px]:w-full max-[600px]:fixed">
@@ -60,7 +45,7 @@ const page = ({product}) => {
 {/* search result  */}
 <div className=" pt-5 flex flex-wrap max-w-[1180px] mx-auto  gap-4  justify-start  max-[600px]:pt-24 max-[600px]:justify-around">
   {
-    result.map((item) => <ProductCarouselsrc img={item.img} name={item.name} weight={item.weight} price={item.price}/> )
+    result.map((item) => <ProductCarouselsrc img={item.img} name={item.name} weight={item.weight} price={item.price} id={id}/> )
   }
 </div>
 
