@@ -6,6 +6,7 @@ import { product_data } from "../../../../Data/data";
 import Btn from '@/app/components/Btn';
 import "./page.css";
 import Image from 'next/image';
+import ProductCarousel from '@/app/components/ProductCarousel';
 
 
 const page = ({params}) => {
@@ -27,7 +28,7 @@ const page = ({params}) => {
   return (
     <>
     <Navbar/>
-    <div className=" main w-full max-w-[1200px] mx-auto flex  relative">
+    <div className=" main w-full max-w-[1200px] mx-auto flex  relative border-b-[1px] border-zinc-300 ">
         <div className="left w-[50%] flex  justify-center ">
             <div className=" leftmain w-full border-b-[1px] border-zinc-300">
             <img src={data.banner} alt="" className='w-[480px] py-5 '/></div>
@@ -54,11 +55,11 @@ const page = ({params}) => {
         </div>
         <div className={`  right    border-l-[1px] border-zinc-200  relative   `} >
             <div className={` rightmain sticky top-0 `}>
-            <div className=" border-b-[1px] border-zinc-300 pb-3 mb-5">
+            <div className="nameborder border-b-[1px] border-zinc-300 pb-3 mb-5">
         <p className='text-zinc-600 text-[13px] '>Home / {data.product_category} / {data.name}</p>
         <h1 className='text-[25px] font-bold py-2'>{data.name}</h1>
         <span className='text-[12px] font-semibold text-zinc-500'><i class="ri-timer-2-line text-[12px] text-green-600"></i> 10 MINs</span>
-        <h1 className='font-semibold py-2 text-blue-500'>View all by Lay's<i class="ri-arrow-right-s-fill "></i>
+        <h1 className='font-semibold py-2 text-blue-500 cursor-pointer'>View all by Lay's<i class="ri-arrow-right-s-fill "></i>
         </h1>
         </div>
         <p className='text-[12px] text-zinc-500 pb-3'>(Inclusive of all taxes)</p>
@@ -97,6 +98,9 @@ const page = ({params}) => {
         </div>
         </div>
         </div>
+    </div>
+    <div className="pt-[50px]">
+        <ProductCarousel/>
     </div>
     </>
   )
