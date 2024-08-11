@@ -38,7 +38,7 @@ const page = ({params}) => {
         <p className='pt-5 pb-3 font-semibold'>Key Features</p>
         <p className='text-zinc-600 text-[14px] w-[80%]'>{data.Key_Features}</p>
 <p className='pt-5 pb-1 font-semibold'>Unit</p>
-<p className='text-zinc-500 text-[14px]'>{data.Unit}</p>
+<p className='text-zinc-500 text-[14px]'>{data.weight}</p>
 <p className='pt-5 pb-1 font-semibold'>Type</p>
 <p className='text-zinc-500 text-[14px]'>{data.Type}</p>
 <p className='pt-5 pb-1 font-semibold'>Country of Origin</p>
@@ -59,8 +59,7 @@ const page = ({params}) => {
         <h1 className='font-semibold py-2 text-blue-500 cursor-pointer'>View all by Lay's<i class="ri-arrow-right-s-fill "></i>
         </h1>
         </div>
-        <p className='text-zinc-600 pb-1 font-semibold '>Unit</p>
-         <p className='text-zinc-400 text-[12px]'>{data.Unit}</p>
+         <p className='text-zinc-500 text-[13px] py-2'>{data.weight}</p>
         <div className="m-addCart flex justify-between ">
 
             <div className=" flex flex-col">

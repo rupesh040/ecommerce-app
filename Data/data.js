@@ -12,7 +12,6 @@ export const product_data = [
                       Lay’s India’s Magic Masala is a 100% vegetarian snack.
                      A versatile snack that can be enjoyed in any setting.
                        Lay’s is always on the lookout for the best flavours, cuts, and innovations that are guaranteed to bring a smile to your face.`,
-        Unit:"48g",
         Type:"Potato Chips",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -177,5 +176,61 @@ export const product_data = [
         Description:`With infections leading to diseases on the rise, it is our hands that transfer most of the germs by touching various viruses and microbes daily, though unintentionally. Washing your hands with soap and water is the best way to reduce the number of microbes on them. However, there can be situations where soap and/ or water are not available. In this situation where nothing else really helps, Dettol Hand Sanitizers can give you that protection and safety to ensure upto 99.99% Germ Protection. Simply apply a few drops of the disinfectant gel on your hand and rub them thoroughly and voila! You are protected! Your Trusted Dettol offers a new and improved Dettol Hand Sanitizer that is rinse free and non-sticky. It is specially formulated to protect you from 100 illness causing germs. With an easy application drop bottle, you can protect yourself & your family from a wide range of illness causing germs anytime, anywhere without soap or water. The great thing with the new and improved hand sanitizers by Dettol is that it comes in exciting two variants - floral and spring fresh. So now, apart from being clean and fresh, you also have superb smelling hands. Keeping germs at bay with Dettol’s on-the-go instant hand sanitizer packs is easy. It is, in addition, enriched with Moisturizers that doesn’t let your hands dry up and leave them 99.9 percent germ-free. These sanitizer bottles are convenient to carry and can be placed anywhere from your pocket, purse or bag`,
         product_category:` Masks & Sanitizers `,
     },
+
+    {
+        id:10,
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/app/assets/products/sliding_images/jpeg/1c0db977-31ab-4d8e-abf3-d42e4a4b4632.jpg?ts=1706182142",
+        name:`Amul Gold Full Cream Fresh Milk`,
+        weight:"500 ml",
+        price:34,
+        dis_price:35,
+        category:"dairy",
+        Key_Features:`Wholesome and healthy
+Pasteurised milk
+Rich in calcium`,
+        Unit:"50 ml",
+        Type:"Full Cream Milk",
+        Country_of_Origin:"India",
+        Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
+        In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
+        Description:`Amul Gold Full Cream Milk (Polypack) Milk is homogenized toned pasteurized milk. Rich and creamy, this milk is an excellent source of vitamin A and vitamin D that enhances growth and development of the body tissues and the brain.`,
+        product_category:`Milk `,
+    },
+
+
+    {
+        id:11,
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=540/app/assets/products/sliding_images/jpeg/0074b9f6-c141-44b0-a00c-0278d5d315ca.jpg?ts=1711473366",
+        name:`Potato`,
+        weight:"1 kg",
+        price:40,
+        dis_price:45,
+        category:"fruits and vegetables",
+        Key_Features:`Contains Vitamin C, Potassium, starch,.Potato helps in reducing inflammation, promote digestion and are good for skin`,
+        Type:"vegetable",
+        Country_of_Origin:"India",
+        Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
+        In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
+        Description:`Potato is a starchy vegetable that is widely used in many recipes. Due to its bland taste, peeled potatoes can be mixed with a number of vegetables. Potatoes are also used in making chips and snacks.`,
+        product_category:`Fresh Vegetables `,
+    },
+
+    {
+        id:12,
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=540/app/assets/products/sliding_images/jpeg/d3131455-8586-473b-9ea6-e8193fad986b.jpg?ts=1711473370",
+        name:`Green Kiwi`,
+        weight:"3 pieces",
+        price:134,
+        dis_price:150,
+        category:"fruits and vegetables",
+        Key_Features:`Rich source of Vitamin C, Contains Fibre Vitamin K, Amino acid.1. Vitamin C acts as a powerful antioxidant and also helps formation of collagen that is responsible for skin and hair health. Vitamin C helps in boosting immunity, keeping ailments at the bay.`,
+        Type:"fruits",
+        Country_of_Origin:"India",
+        Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
+        In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
+        Description:`Kiwi is a sweet and slightly tangy fruit. It has green flesh on the inside that lends a unique flavor and a tropical zing. Kiwis are packed with a lot of flavor and are an excellent source of nutrition`,
+        product_category:`Exotics `,
+    },
+
 
 ]
