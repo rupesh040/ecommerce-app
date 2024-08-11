@@ -1,0 +1,35 @@
+.sticky-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.name{
+    display: none;
+}
+.sticky-nav .name{
+    display: block;
+}
+/* .catebanner::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 30%;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+    bottom: -10px;
+} */
+ .fisrt{
+    display: none;
+ }
+  .second{
+    display: block;
+ }
+ @media (max-width:600px) {
+    .fisrt{
+        display: block;
+    }
+    .second{
+        display: none;
+    }
+ }

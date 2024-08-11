@@ -1,9 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
-
+import { banner_data } from "../../../Data/banner";
 const Banner = () => {
   return (
-    <div className=' banner max-w-[1180px] max-[1080px]:max-w-[90%]  overflow-hidden   bg-orange-400 '>
-<img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2024-08/Rakhi_WEB-2.jpg" className='w-full' alt="" />
+    <div  className=' banner max-w-[1180px] max-[1080px]:max-w-[90%]  overflow-hidden   bg-orange-400 '>
+        <Link Link href="/categories">
+<img src={banner_data} className='w-full' alt="" /></Link>
     </div>
   )
 }

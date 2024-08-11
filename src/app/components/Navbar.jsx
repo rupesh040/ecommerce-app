@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const Navbar = ({btnOn}) => {
@@ -52,7 +53,7 @@ const Navbar = ({btnOn}) => {
       };
 
   return (
-    <nav className={` ${stickyClass} bg-white flex justify-between items-center  border-b-[1px] border-zinc-200 `} >
+    <nav className={` ${stickyClass} bg-white flex justify-between items-center  border-b-[1px] border-zinc-200 z-10`} >
       <div className={` logo`} id={`${logosticky}`}>
         <h1 className='text-4xl font-bold'>Rupesh.</h1>
         <i class="ri-account-circle-fill text-4xl cursor-pointer" onClick={btnOn}></i>
@@ -62,8 +63,9 @@ const Navbar = ({btnOn}) => {
         <p className='overflow-hidden whitespace-nowrap text-ellipsis font-light'>Lorem ipsum dolor sit amet...</p>
         <i class="ri-arrow-drop-down-fill absolute top-[40%] left-[95%] text-4xl"></i>
       </div>
-      <div className={`search  px-4 py-2 flex gap-2  rounded-lg h-[47] border-[1px] border-zinc-300 bg-zinc-100`}>
-       <input type="text" className='outline-none w-[95%] bg-transparent border-r-[1px] border-zinc-500' placeholder={placeholders[id]}/>
+      <div className={`search  px-4 py-2 flex gap-2  rounded-lg h-[47] border-[1px] border-zinc-300 bg-zinc-100`} >
+        <Link href="/search" className='w-[100%]'>
+       <input type="text" className='outline-none w-[100%] bg-transparent border-r-[1px] border-zinc-500' placeholder={placeholders[id]} /></Link>
        <i class="ri-search-2-line text-black cursor-pointer text-xl active:scale-90"></i>
       </div>
 

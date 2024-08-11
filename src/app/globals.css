@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+  }
 body{
     overflow-x: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+::selection {
+    background: transparent;
+  }
 /* navbar section  */
 .logo h1{
     background-color: #4158D0;

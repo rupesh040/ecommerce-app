@@ -10,9 +10,9 @@ import Carousel from "./components/Carousel";
 import Catecard from "./components/Catecard";
 import ProductCarousel from "./components/ProductCarousel";
 import Footer from "./components/Footer";
+import Link from "next/link";
 
-
-export default function Home() {
+export default function Home({name}) {
     const [overlay ,setOverlay] = useState(false);
     const [longitude,setLongitude] = useState(null);
     const [latitude,setLatitude] = useState(null);
@@ -35,13 +35,14 @@ export default function Home() {
 //     .then(res => res.json())
 //     .then(data => setGeo(data.results[0]));
 // }
-
+console.log(name);
   return (
   <>
 <Navbar btnOn={trueFalse}/>
 {!overlay?null:<Account />}
 
 {!overlay?null:<Overlay btn={trueFalse} />}
+
 <Banner/>
 <Carousel/>
 <Catecard/>
@@ -49,6 +50,7 @@ export default function Home() {
 <ProductCarousel/>
 <ProductCarousel/>
 <Footer/>
+
   </>
   );
 }
