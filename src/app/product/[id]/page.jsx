@@ -7,6 +7,7 @@ import Btn from '@/app/components/Btn';
 import "./page.css";
 import Image from 'next/image';
 import ProductCarousel from '@/app/components/ProductCarousel';
+import Catenavbar from '@/app/categories/Catenavbar';
 
 
 const page = ({params}) => {
@@ -27,7 +28,7 @@ const page = ({params}) => {
     }, []);
   return (
     <>
-    <Navbar/>
+<Catenavbar category={data.Type}/>
     <div className=" main w-full max-w-[1200px] mx-auto flex  relative border-b-[1px] border-zinc-300 ">
         <div className="left w-[50%] flex  justify-center ">
             <div className=" leftmain w-full border-b-[1px] border-zinc-300 flex justify-center ">

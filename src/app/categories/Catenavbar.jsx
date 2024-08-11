@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import "./page.css";
 import 'remixicon/fonts/remixicon.css';
 
-const Catenavbar = () => {
+const Catenavbar = ({category}) => {
     const [stickyClass, setStickyClass] = useState('');
     useEffect(() => {
       window.addEventListener('scroll', stickNavbar);
@@ -18,12 +18,12 @@ const Catenavbar = () => {
       }
     };
   return (
-<nav className={`${stickyClass} w-full flex flex-row items-center justify-between fixed top-0 left-0 z-10`}>
+<nav className={`${stickyClass} w-full flex flex-row items-center justify-between fixed top-0 left-0 z-10 bg-white`}>
     <Link href="/"  className=" flex flex-row gap-3 items-center"><i class="ri-arrow-left-line py-1 px-2 text-xl bg-white rounded-full cursor-pointer"></i>
-    <h2 className='text-xl font-bold text-zinc-800 name'>Rakhi</h2>
+    <h2 className='text-[15px] font-bold text-zinc-800 name '>{category}</h2>
     </Link>
 
-<div className="flex flex-row gap-5 items-center">
+<div className="flex flex-row gap-3 items-center">
 <Link href="/search" className='w-[100%]'><i class="ri-search-line py-2 px-2 text-xl bg-white rounded-full cursor-pointer"></i></Link>
 <i class="ri-shopping-cart-line py-1 px-2 text-xl bg-white rounded-full cursor-pointer"></i></div>
 
