@@ -8,7 +8,7 @@ import ProductCarousel from '../components/ProductCarousel';
 import { product_data } from "../../../Data/data";
 import ProductCarouselsrc from '../components/ProductCarouselsrc';
 
-const page = ({product,result}) => {
+const page = ({product}) => {
     const [result , setResult] = useState(product_data);
 
     const placeholders = [
