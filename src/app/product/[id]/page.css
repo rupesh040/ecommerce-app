@@ -50,4 +50,14 @@ padding: 48px 0 ;
     .nameborder{
         border: none;
     }
+    .m-addCart{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 20px  #D4D4D8;
+        padding: 15px 25px 5px 25px;
+        border-top: 1px solid #D4D4D8;
+    }
 }

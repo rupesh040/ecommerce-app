@@ -62,11 +62,12 @@ const page = ({params}) => {
         <h1 className='font-semibold py-2 text-blue-500 cursor-pointer'>View all by Lay's<i class="ri-arrow-right-s-fill "></i>
         </h1>
         </div>
-        <p className='text-[12px] text-zinc-500 pb-3'>(Inclusive of all taxes)</p>
-        <div className=" flex justify-between">
+         <p className='text-zinc-400 text-[12px]'>{data.Unit}</p>
+        <div className="m-addCart flex justify-between">
+
             <div className=" flex flex-col">
-                <p className='text-zinc-400 text-[12px]'>{data.Unit}</p>
-            <p className='font-semibold'>₹{data.price} <span className='text-zinc-400 text-[12px] pl-1'>MRP <s>{data.dis_price}</s> </span> </p></div>
+            <p className='font-semibold'>₹{data.price} <span className='text-zinc-400 text-[12px] pl-1'>MRP <s>{data.dis_price}</s> </span> </p>
+            <p className='text-[12px] text-zinc-500 pb-3'>(Inclusive of all taxes)</p></div>
             <Btn/>
         </div>
     <div className=" policy">
