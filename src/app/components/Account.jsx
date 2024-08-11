@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import Address from './Address';
+
 
 const Account = ({add,loc}) => {
     const [trues,setTrues] = useState(false);
