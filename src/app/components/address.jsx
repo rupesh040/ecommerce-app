@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Address = ({add}) => {
+const address = ({add}) => {
   return (
     <>
     <div className=' w-[250px]  bg-white rounded-2xl absolute  mx-5 my-2 border-[1px] border-zinc-300 flex justify-between flex-col  z-20 p-5'>
@@ -12,4 +12,4 @@ const Address = ({add}) => {
   )
 }
 
-export default Address
+export default address
