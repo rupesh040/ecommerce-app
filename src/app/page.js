@@ -45,7 +45,6 @@ console.log(geo.formatted);
 <ProductCarousel/>
 <ProductCarousel/>
 <Footer/>
-
   </>
   );
 }

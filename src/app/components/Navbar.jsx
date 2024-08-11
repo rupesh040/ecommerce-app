@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Account from './Account';
 import Overlay from './Overlay';
+import Address from './Address';
 
 const Navbar = ({btnOn,address}) => {
     const [logIn ,setLogIn] = useState(true);
@@ -78,7 +79,7 @@ const Navbar = ({btnOn,address}) => {
 
       <div className="cart  flex gap-5 items-center justify-center">{!logIn? <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer">Login</div> : <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer" onClick={trueFalse}>Account</div> } <i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer"></i></div>
     </nav>
-    {!overlay?null:<Account />}
+    {!overlay?null:<Account add={address} location={btnOn} />}
     {!overlay?null:<Overlay btn={trueFalse} />}
     </>
   )
