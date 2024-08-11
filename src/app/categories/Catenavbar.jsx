@@ -14,7 +14,7 @@ const Catenavbar = ({category}) => {
     const stickNavbar = () => {
       if (window !== undefined) {
         let windowHeight = window.scrollY;
-        windowHeight > 150 ? setStickyClass('sticky-nav')  : setStickyClass('');
+        windowHeight > 0 ? setStickyClass('sticky-nav')  : setStickyClass('');
       }
     };
   return (
