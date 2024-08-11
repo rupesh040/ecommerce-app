@@ -11,7 +11,7 @@ import ProductCarousel from '@/app/components/ProductCarousel';
 
 const page = ({params}) => {
     const [data, setData] = useState({});
-
+    const [itemCount,setItemCount] = useState(0);
     const fetchproductData = () => {
       for (let i = 0; i < product_data.length; i++) {
         if (Number(params.id) === product_data[i].id) {
@@ -30,7 +30,7 @@ const page = ({params}) => {
     <Navbar/>
     <div className=" main w-full max-w-[1200px] mx-auto flex  relative border-b-[1px] border-zinc-300 ">
         <div className="left w-[50%] flex  justify-center ">
-            <div className=" leftmain w-full border-b-[1px] border-zinc-300">
+            <div className=" leftmain w-full border-b-[1px] border-zinc-300 flex justify-center ">
             <img src={data.banner} alt="" className='w-[480px] py-5 '/></div>
         <div className="hide">
        <h1 className='text-2xl py-3 font-bold'>Product Detail</h1>
@@ -55,20 +55,27 @@ const page = ({params}) => {
         </div>
         <div className={`  right    border-l-[1px] border-zinc-200  relative   `} >
             <div className={` rightmain sticky top-0 `}>
-            <div className="nameborder border-b-[1px] border-zinc-300 pb-3 mb-5">
+            <div className="nameborder border-b-[1px] border-zinc-300  ">
         <p className='text-zinc-600 text-[13px] '>Home / {data.product_category} / {data.name}</p>
         <h1 className='text-[25px] font-bold py-2'>{data.name}</h1>
         <span className='text-[12px] font-semibold text-zinc-500'><i class="ri-timer-2-line text-[12px] text-green-600"></i> 10 MINs</span>
         <h1 className='font-semibold py-2 text-blue-500 cursor-pointer'>View all by Lay's<i class="ri-arrow-right-s-fill "></i>
         </h1>
         </div>
+        <p className='text-zinc-600 pb-1 font-semibold '>Unit</p>
          <p className='text-zinc-400 text-[12px]'>{data.Unit}</p>
         <div className="m-addCart flex justify-between">
 
             <div className=" flex flex-col">
             <p className='font-semibold'>₹{data.price} <span className='text-zinc-400 text-[12px] pl-1'>MRP <s>{data.dis_price}</s> </span> </p>
             <p className='text-[12px] text-zinc-500 pb-3'>(Inclusive of all taxes)</p></div>
-            <Btn/>
+            {  !itemCount?<button className='font-semibold text-[13px] bg-blue-500 text-white py-[5px] px-[18px] rounded-lg border-[1px] border-blue-500 w-[100px] h-[40px] ' onClick={ () => setItemCount(prev => prev+1)}>ADD</button>:
+                    <div className='flex flex-row  justify-around items-center rounded-lg gap-1 px-1 py-[4px]  w-[100px] h-[40px] bg-blue-500 text-white'>
+                    <i class="ri-subtract-line cursor-pointer px-1  text-[14px]  rounded-md" onClick={ () => setItemCount(prev => prev-1)}></i>
+                    <p className='text-[15px]'>{itemCount}</p>
+                    <i class="ri-add-line cursor-pointer px-1 text-[14px]  rounded-md" onClick={ () => setItemCount(prev => prev+1)}></i>
+                    </div>
+            }
         </div>
     <div className=" policy">
         <h2 className='font-semibold text-[15px] pt-10 '>Why shop from our store?</h2>
@@ -99,6 +106,9 @@ const page = ({params}) => {
         </div>
         </div>
         </div>
+    </div>
+    <div className="pt-[50px]">
+        <ProductCarousel/>
     </div>
     <div className="pt-[50px]">
         <ProductCarousel/>

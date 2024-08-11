@@ -21,6 +21,10 @@ padding: 48px 0 ;
 .leftmain{
     margin-bottom: 12px;
 }
+.nameborder{
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+}
 @media (max-width:900px) {
     .hide{
         display: none;
