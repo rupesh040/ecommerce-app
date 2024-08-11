@@ -45,7 +45,7 @@ const page = ({product,result}) => {
 {/* search result  */}
 <div className=" pt-5 flex flex-wrap max-w-[1180px] mx-auto  gap-4  justify-start  max-[600px]:pt-24 max-[600px]:justify-around">
   {
-    result.map((item) => <ProductCarouselsrc img={item.img} name={item.name} weight={item.weight} price={item.price} id={id}/> )
+    result.map((item) => <ProductCarouselsrc img={item.img} name={item.name} weight={item.weight} price={item.price}/> )
   }
 </div>
 
