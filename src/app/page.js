@@ -13,13 +13,10 @@ import Footer from "./components/Footer";
 import Link from "next/link";
 
 export default function Home({name}) {
-    const [overlay ,setOverlay] = useState(false);
     const [longitude,setLongitude] = useState(null);
     const [latitude,setLatitude] = useState(null);
     const [geo,setGeo] = useState([]);
-    const trueFalse = () =>{
-        setOverlay(prevState => !prevState);
-    }
+    
     useEffect(()=>{
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition((position) => {
@@ -37,11 +34,7 @@ export default function Home({name}) {
 // }
   return (
   <>
-<Navbar btnOn={trueFalse}/>
-{!overlay?null:<Account />}
-
-{!overlay?null:<Overlay btn={trueFalse} />}
-
+<Navbar/>
 <Banner/>
 <Carousel/>
 <Catecard/>
