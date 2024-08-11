@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Account from './Account';
 import Overlay from './Overlay';
-import Address from './Address';
 
 const Navbar = ({btnOn,address}) => {
     const [logIn ,setLogIn] = useState(true);
