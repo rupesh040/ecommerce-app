@@ -35,7 +35,6 @@ export default function Home({name}) {
 //     .then(res => res.json())
 //     .then(data => setGeo(data.results[0]));
 // }
-console.log(name);
   return (
   <>
 <Navbar btnOn={trueFalse}/>
