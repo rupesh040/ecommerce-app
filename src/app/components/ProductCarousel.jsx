@@ -9,8 +9,8 @@ const ProductCarousel  = () => {
 <a className="text-blue-500 "> see all</a></div>
     <div className=' cro max-w-[1180px]   mx-auto flex gap-3 flex-nowrap  overflow-x-scroll p-5'>
         {
-            product_data.map((item) => {
-                return <Product img={item.img} name={item.name} weight={item.weight} price={item.price} />
+            product_data.map((item,ind) => {
+                return <Product key={ind} id={item.id} img={item.img} name={item.name} weight={item.weight} price={item.price} />
             })
         }
     </div>

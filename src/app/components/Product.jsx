@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import Btn from './Btn'
-const Product = ({img,name,weight,price}) => {
+import Link from 'next/link'
+
+const Product = ({img,name,weight,price,id}) => {
   return (
     <div className='min-w-[179px] max-w-[179px] h-[272px] bg-white border-[1px] border-zinc-300 rounded-xl flex flex-col overflow-hidden  p-3 hover:border-blue-300 hover:shadow-lg' >
-        <div className="h-[50%] w-[100%] flex justify-center items-center overflow-hidden">
-        <img src={img} alt="" className='w-[130px]' /></div>
+        <Link className="h-[50%] w-[100%] flex justify-center items-center overflow-hidden" href={`/product/${id}`}>
+        <img src={img} alt="" className='w-[130px]' /></Link>
         <div className="h-[50%] flex flex-col justify-between pt-2">
             <div className=" flex flex-col gap-1">
                 <span className='text-[10px] '><i class="ri-timer-2-line text-[10px] text-green-600"></i> 10 MINs</span>
