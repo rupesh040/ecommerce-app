@@ -9,6 +9,7 @@ const Navbar = ({btnOn,address}) => {
     const [overlay ,setOverlay] = useState(false);
     const trueFalse = () =>{
         setOverlay(prevState => !prevState);
+         btnOn();
     }
     const[id,setId]=useState(0);
     const placeholders = [
