@@ -8,7 +8,7 @@ import ProductCarousel from '../components/ProductCarousel';
 import { product_data } from "../../../Data/data";
 import ProductCarouselsrc from '../components/ProductCarouselsrc';
 
-const page = ({product}) => {
+const page = () => {
     const [result , setResult] = useState(product_data);
 
     const placeholders = [
@@ -37,7 +37,7 @@ const page = ({product}) => {
     <div className={`search  px-4 py-2 flex gap-2  rounded-lg h-[47] border-[1px] border-zinc-300 bg-zinc-100 justify-around items-center `}>
         <Link href="/">
     <i class="ri-arrow-left-line cursor-pointer text-2xl"></i></Link>
-       <input type="text" className='outline-none w-[95%] bg-transparent border-r-[1px] border-zinc-500' placeholder={placeholders[id]} onChange={(e) => searchData(e.target.value)} autoFocus/>
+       <input type="text" className='outline-none w-[95%] bg-transparent border-r-[1px] border-zinc-500' placeholder="search.." onChange={(e) => searchData(e.target.value)} autoFocus/>
        <i class="ri-search-2-line text-black cursor-pointer text-xl active:scale-90" ></i>
       </div>
     </div>
