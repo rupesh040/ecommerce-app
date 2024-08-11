@@ -28,15 +28,17 @@ export default function Home({name}) {
         }
         else{alert("error")}
     },[]);
-
-// const location = async (latitude,longitude) =>{
-//     await  fetch(`https://api.opencagedata.com/geocode/v1/json?key=d2eb98b8df2440e4b815490738983b95&q=${latitude}%2C${longitude}&pretty=1`)
-//     .then(res => res.json())
-//     .then(data => setGeo(data.results[0]));
-// }
+const leta = latitude;
+const long = longitude;
+const location = async (latitude,longitude) =>{
+    await  fetch(`https://api.opencagedata.com/geocode/v1/json?q=${leta},+${long}&key=d2eb98b8df2440e4b815490738983b95&language=en&pretty=1`)
+    .then(res => res.json())
+    .then(data => setGeo(data.results[0]));
+}
+console.log(geo.formatted);
   return (
   <>
-<Navbar/>
+<Navbar address={geo.formatted} btnOn={location}/>
 <Banner/>
 <Carousel/>
 <Catecard/>

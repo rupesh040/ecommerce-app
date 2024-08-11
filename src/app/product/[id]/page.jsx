@@ -56,7 +56,7 @@ const page = ({params}) => {
         <p className='text-zinc-600 text-[13px] '>Home / {data.product_category} / {data.name}</p>
         <h1 className='text-[25px] font-bold py-2'>{data.name}</h1>
         <span className='text-[12px] font-semibold text-zinc-500'><i class="ri-timer-2-line text-[12px] text-green-600"></i> 10 MINs</span>
-        <h1 className='font-semibold py-2 text-blue-500 cursor-pointer'>View all by Lay's<i class="ri-arrow-right-s-fill "></i>
+        <h1 className='font-semibold py-2 text-blue-500 cursor-pointer'>View all <i class="ri-arrow-right-s-fill "></i>
         </h1>
         </div>
          <p className='text-zinc-500 text-[13px] py-2'>{data.weight}</p>

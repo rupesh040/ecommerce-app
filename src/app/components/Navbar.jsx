@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Account from './Account';
 import Overlay from './Overlay';
 
-const Navbar = ({btnOn}) => {
+const Navbar = ({btnOn,address}) => {
     const [logIn ,setLogIn] = useState(true);
     const [overlay ,setOverlay] = useState(false);
     const trueFalse = () =>{
@@ -65,9 +65,9 @@ const Navbar = ({btnOn}) => {
         <Link href={"/"} className='text-4xl font-bold text'>Rupesh.</Link>
         <i class="ri-account-circle-fill text-4xl cursor-pointer" onClick={trueFalse}></i>
       </div>
-      <div className="address relative cursor-pointer">
+      <div className="address relative cursor-pointer" onClick={btnOn}>
         <h2 className='font-bold text-xl'>Delivery in 10 minutes</h2>
-        <p className='overflow-hidden whitespace-nowrap text-ellipsis font-light'>Lorem ipsum dolor sit amet...</p>
+        <p className='overflow-hidden whitespace-nowrap text-ellipsis inline-block w-[240px] font-light'>{address}</p>
         <i class="ri-arrow-drop-down-fill absolute top-[40%] left-[95%] text-4xl"></i>
       </div>
       <div className={`search  px-4 py-2 flex gap-2  rounded-lg h-[47] border-[1px] border-zinc-300 bg-zinc-100`} >
