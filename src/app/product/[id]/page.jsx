@@ -31,17 +31,13 @@ const page = ({params}) => {
     <div className=" main w-full max-w-[1200px] mx-auto flex  relative border-b-[1px] border-zinc-300 ">
         <div className="left w-[50%] flex  justify-center ">
             <div className=" leftmain w-full border-b-[1px] border-zinc-300 flex justify-center ">
-            <img src={data.banner} alt="" className='w-[480px] py-5 '/></div>
+            <img src={data.img} alt="" className='w-[480px] py-5 '/></div>
         <div className="hide">
        <h1 className='text-2xl py-3 font-bold'>Product Detail</h1>
-        <p className='py-1'>{data.flavour}</p>
-        <p className='text-zinc-500 text-[14px]'>Flavour</p>
         <p className='pt-5 pb-3 font-semibold'>Key Features</p>
         <p className='text-zinc-600 text-[14px] w-[80%]'>{data.Key_Features}</p>
 <p className='pt-5 pb-1 font-semibold'>Unit</p>
 <p className='text-zinc-500 text-[14px]'>{data.Unit}</p>
-<p className='pt-5 pb-3 font-semibold'>Ingredients</p>
-<p className='text-zinc-600 text-[14px] w-[80%]'>{data.Ingredients}</p>
 <p className='pt-5 pb-1 font-semibold'>Type</p>
 <p className='text-zinc-500 text-[14px]'>{data.Type}</p>
 <p className='pt-5 pb-1 font-semibold'>Country of Origin</p>
@@ -64,7 +60,7 @@ const page = ({params}) => {
         </div>
         <p className='text-zinc-600 pb-1 font-semibold '>Unit</p>
          <p className='text-zinc-400 text-[12px]'>{data.Unit}</p>
-        <div className="m-addCart flex justify-between">
+        <div className="m-addCart flex justify-between ">
 
             <div className=" flex flex-col">
             <p className='font-semibold'>₹{data.price} <span className='text-zinc-400 text-[12px] pl-1'>MRP <s>{data.dis_price}</s> </span> </p>

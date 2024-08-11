@@ -62,7 +62,7 @@ const Navbar = ({btnOn}) => {
     <>
     <nav className={` ${stickyClass} bg-white flex justify-between items-center  border-b-[1px] border-zinc-200 z-10`} >
       <div className={` logo`} id={`${logosticky}`}>
-        <h1 className='text-4xl font-bold'>Rupesh.</h1>
+        <Link href={"/"} className='text-4xl font-bold text'>Rupesh.</Link>
         <i class="ri-account-circle-fill text-4xl cursor-pointer" onClick={trueFalse}></i>
       </div>
       <div className="address relative cursor-pointer">

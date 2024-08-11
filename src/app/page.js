@@ -11,12 +11,14 @@ import Catecard from "./components/Catecard";
 import ProductCarousel from "./components/ProductCarousel";
 import Footer from "./components/Footer";
 import Link from "next/link";
+import { product_data } from "../../Data/data";
+import Product from "./components/Product";
 
 export default function Home({name}) {
     const [longitude,setLongitude] = useState(null);
     const [latitude,setLatitude] = useState(null);
     const [geo,setGeo] = useState([]);
-    
+
     useEffect(()=>{
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition((position) => {
@@ -38,7 +40,6 @@ export default function Home({name}) {
 <Banner/>
 <Carousel/>
 <Catecard/>
-<ProductCarousel/>
 <ProductCarousel/>
 <ProductCarousel/>
 <Footer/>

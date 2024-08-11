@@ -1,22 +1,18 @@
 export const product_data = [
     {
         id:1,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7bc1df93-0002-47c3-bea3-7b92bcf09c8c.jpg?ts=1720514361",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=900/app/assets/products/sliding_images/jpeg/7bc1df93-0002-47c3-bea3-7b92bcf09c8c.jpg?ts=1720514361",
         name:`Lay's India's Magic Masala Potato Chips`,
         weight:"48g",
         price:20,
         dis_price:110,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=900/app/assets/products/sliding_images/jpeg/7bc1df93-0002-47c3-bea3-7b92bcf09c8c.jpg?ts=1720514361",
-        flavour:"Magic Masala",
         Key_Features:`The Lay’s India’s Magic Masala spice blend will excite your tastebuds.
                       Made from the highest quality, farm-grown potatoes.
                       Lay’s India’s Magic Masala is a 100% vegetarian snack.
                      A versatile snack that can be enjoyed in any setting.
                        Lay’s is always on the lookout for the best flavours, cuts, and innovations that are guaranteed to bring a smile to your face.`,
         Unit:"48g",
-        Ingredients:`Potato, edible vegetable oil (palmolein, rice bran oil), *seasoning (~spices and condiments, iodized salt, maltodextrin, black salt, sugar, tomato powder, acidity regulators (330, 296, 334), flavour (natural and nature identical flavouring substances), anticaking agent (551), color (160c)).
-        *As flavouring agent. ~Contains Onion and Garlic.`,
         Type:"Potato Chips",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -26,20 +22,16 @@ export const product_data = [
     },
     {
         id:2,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/19266a.jpg?ts=1688625382",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=540/app/images/products/sliding_image/19266a.jpg?ts=1688625382",
         name:`Haldiram Bhujia`,
         weight:"400g",
         price:111,
         dis_price:210,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/full_screen/pro_19266.jpg?ts=1684834609",
-        flavour:"Magic Masala",
         Key_Features:`Famous Bikaneri hot and spicy extruded fried Indian snack
        Trans fat free
         Zero cholesterol`,
          Unit:"400g",
-        Ingredients:`Potato, edible vegetable oil (palmolein, rice bran oil), *seasoning (~spices and condiments, iodized salt, maltodextrin, black salt, sugar, tomato powder, acidity regulators (330, 296, 334), flavour (natural and nature identical flavouring substances), anticaking agent (551), color (160c)).
-        *As flavouring agent. ~Contains Onion and Garlic.`,
         Type:"Bhujia",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -49,18 +41,15 @@ export const product_data = [
     },
     {
         id:3,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/829ffbff-3516-4323-84ce-a6a3f21ff022.jpg?ts=1707313057",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/39d3d038-3370-44eb-a4c5-e42ef52fbd0d.jpg?ts=1707313057",
         name:`Haldiram's Nut Cracker / Peanuts`,
         weight:"200g",
         price:54,
         dis_price:110,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/39d3d038-3370-44eb-a4c5-e42ef52fbd0d.jpg?ts=1707313057",
-        flavour:"Magic Masala",
         Key_Features:`Spicy and crunchy.
         Deep fried namkeen.`,
         Unit:"200g",
-        Ingredients:`Peanuts (69%), Gram Pulse Flour (18%), Corn Starch, Edible Vegetable Oil, Spices & Condiments [Red Chilli Powder, Clove Powder, Cumin Powder, Black Pepper Powder, Ginger Powder, Cardamom Powder, Cinnamon Powder, Mace Powder, Nutmeg Powder, Asafoetida] Edible Common Salt, Acidity Regulator (Ins 330) and Paprika Extract (Ins 160C)`,
         Type:"Coated Peanuts",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -70,19 +59,15 @@ export const product_data = [
     },
     {
         id:4,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/432818a.jpg?ts=1688444559",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/432818a.jpg?ts=1688444559",
         name:`Doritos Cheese Nachos`,
         weight:"30g",
         price:53,
         dis_price:70,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/432818a.jpg?ts=1688444559",
-        flavour:"Cheese",
         Key_Features:`Doritos is the spark that ignites you to be bold! Signature Flavour: Nacho Cheese
        Enjoy it by itself or with a dip`,
         Unit:"48g",
-        Ingredients:`Potato, edible vegetable oil (palmolein, rice bran oil), *seasoning (~spices and condiments, iodized salt, maltodextrin, black salt, sugar, tomato powder, acidity regulators (330, 296, 334), flavour (natural and nature identical flavouring substances), anticaking agent (551), color (160c)).
-        *As flavouring agent. ~Contains Onion and Garlic.`,
         Type:"Potato Chips",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -92,23 +77,18 @@ export const product_data = [
     },
     {
         id:5,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/11150a.jpg?ts=1688463551",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/11150a.jpg?ts=1688463551",
         name:`Uncle Chipps Spicy Treat Flavour Potato Chips`,
         weight:"48g",
         price:20,
         dis_price:35,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/11150a.jpg?ts=1688463551",
-        flavour:"Spicy Treat",
         Key_Features:`Spicy Treat chips are perfectly seasoned with exotic spices.
         Made from high-quality potatoes for ultimate taste and crunch.
         This is a 100% vegetarian snack.
         Delicious snack to share with friends while watching a movie or working at the office.
         Uncle Chipps is warm, playful, lively, companionable and traditional at heart, just like the good-natured uncle everyone in the family relates to and no family gathering is complete without!`,
         Unit:"48g",
-        Ingredients:`Potato, Edible Vegetable Oil (Palmolein), *Seasoning (Sugar, Iodised Salt, ~Spices & Condiments, Acidity Regulators (330, 334, 296), Matodextrin, Edible Starch, Salt Substitute (Potassium Chloride), Milk Solids, Anticaking Agents (551, 470), Flavour Enhancers (631, 627), Color (150d), Flavour (Natural and Nature Identical Flavouring Substances), Modified Starch (1450)).
-        Contains Milk
-       *As flavouring agent. ~Contains Onion`,
         Type:"Potato Chips",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -118,22 +98,18 @@ export const product_data = [
     },
     {
         id:6,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/9166e34b-2608-44da-8e84-9c41966da245.jpg",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/51061f8f-1f3e-4260-ad28-2e0d3130e54b.jpg?ts=1713000795",
         name:`Jolochip Hottest Chocolate Jolo Chips`,
         weight:"10g",
         price:299,
         dis_price:349,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/51061f8f-1f3e-4260-ad28-2e0d3130e54b.jpg?ts=1713000795",
-        flavour:"Chocolate",
         Key_Features:`The Lay’s India’s hot spice blend will excite your tastebuds.
                       Made from the highest quality, farm-grown potatoes.
                       Lay’s India’s Magic Masala is a 100% vegetarian snack.
                      A versatile snack that can be enjoyed in any setting.
                        Lay’s is always on the lookout for the best flavours, cuts, and innovations that are guaranteed to bring a smile to your face.`,
         Unit:"48g",
-        Ingredients:`Potato, edible vegetable oil (palmolein, rice bran oil), *seasoning (~spices and condiments, iodized salt, maltodextrin, black salt, sugar, tomato powder, acidity regulators (330, 296, 334), flavour (natural and nature identical flavouring substances), anticaking agent (551), color (160c)).
-        *As flavouring agent. ~Contains Onion and Garlic.`,
         Type:"Jolo Chip",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -143,22 +119,18 @@ export const product_data = [
     },
     {
         id:7,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/73e24d7d-1642-40ad-897a-c195f901abbe.jpg?ts=1718125813",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/9c117712-4c15-438a-958b-8ae34bd9abcd.jpg?ts=1718125810",
         name:`Beyond Snack Kerala Banana Chips with Coconut Oil & Rock Salt`,
         weight:"90g",
         price:68,
         dis_price:99,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/9c117712-4c15-438a-958b-8ae34bd9abcd.jpg?ts=1718125810",
-        flavour:"Coconut Oil & Rock Salt",
         Key_Features:`The Lay’s India’s Magic Masala spice blend will excite your tastebuds.
                       Made from the highest quality, farm-grown potatoes.
                       Lay’s India’s Magic Masala is a 100% vegetarian snack.
                      A versatile snack that can be enjoyed in any setting.
                        Lay’s is always on the lookout for the best flavours, cuts, and innovations that are guaranteed to bring a smile to your face.`,
         Unit:"48g",
-        Ingredients:`Potato, edible vegetable oil (palmolein, rice bran oil), *seasoning (~spices and condiments, iodized salt, maltodextrin, black salt, sugar, tomato powder, acidity regulators (330, 296, 334), flavour (natural and nature identical flavouring substances), anticaking agent (551), color (160c)).
-        *As flavouring agent. ~Contains Onion and Garlic.`,
         Type:"Banana Chips",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
@@ -168,26 +140,42 @@ export const product_data = [
     },
     {
         id:8,
-        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c1facd25-b5d2-42f3-a10b-c5974792c135.jpg?ts=1719573838",
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/77511709-3cf0-4bef-ae49-1d3939b03704.jpg?ts=1719573835",
         name:`Crax Biggies Swiss Cheese Puffs + Crunchy Pipes Puffs Combo`,
         weight:"64g + 75g",
         price:74,
         dis_price:110,
         category:"snacks",
-        banner:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/large_images/jpeg/77511709-3cf0-4bef-ae49-1d3939b03704.jpg?ts=1719573835",
-        flavour:"Magic Masala",
         Key_Features:`Crax Biggies Swiss Cheese Puffs :- India’s 1st truly Big-Size snack
         International Snack now at Indian Prices
         With imported premium Swiss Cheese flavour`,
         Unit:"64g + 75g",
-        Ingredients:`Potato, edible vegetable oil (palmolein, rice bran oil), *seasoning (~spices and condiments, iodized salt, maltodextrin, black salt, sugar, tomato powder, acidity regulators (330, 296, 334), flavour (natural and nature identical flavouring substances), anticaking agent (551), color (160c)).
-        *As flavouring agent. ~Contains Onion and Garlic.`,
         Type:"Potato Chips",
         Country_of_Origin:"India",
         Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Crax Crunchy Pipes Puffs :- Crax Crunchy Pipes Puffs are a unique and fun snack with a crunchy texture and a burst of flavor. These puffed snacks are shaped like pipes, making them enjoyable to eat and perfect for sharing with friends and family. These are great for parties, picnics, or a quick snack on the go. Satisfy your cravings with this delightful and tasty treat.`,
         product_category:`Chips & Crisps`,
+    },
+    {
+        id:9,
+        img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=540/app/assets/products/sliding_images/jpeg/730c6989-89a0-4552-a745-4d35e058b98c.jpg?ts=1707312503",
+        name:`Dettol Hand Sanitizer`,
+        weight:"50 ml",
+        price:24,
+        dis_price:25,
+        category:"pharmacy",
+        Key_Features:`Trusted Dettol Formula; Protects from 100 Illness Causing Germs.
+        Use Dettol Hand Sanitizer to protect transference of germs from your hands anytime, anywhere without Soap or Water.
+        Rinse Free and Non sticky.
+        Recommended by the Indian Medical Association`,
+        Unit:"50 ml",
+        Type:"Hand Sanitizer",
+        Country_of_Origin:"India",
+        Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
+        In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
+        Description:`With infections leading to diseases on the rise, it is our hands that transfer most of the germs by touching various viruses and microbes daily, though unintentionally. Washing your hands with soap and water is the best way to reduce the number of microbes on them. However, there can be situations where soap and/ or water are not available. In this situation where nothing else really helps, Dettol Hand Sanitizers can give you that protection and safety to ensure upto 99.99% Germ Protection. Simply apply a few drops of the disinfectant gel on your hand and rub them thoroughly and voila! You are protected! Your Trusted Dettol offers a new and improved Dettol Hand Sanitizer that is rinse free and non-sticky. It is specially formulated to protect you from 100 illness causing germs. With an easy application drop bottle, you can protect yourself & your family from a wide range of illness causing germs anytime, anywhere without soap or water. The great thing with the new and improved hand sanitizers by Dettol is that it comes in exciting two variants - floral and spring fresh. So now, apart from being clean and fresh, you also have superb smelling hands. Keeping germs at bay with Dettol’s on-the-go instant hand sanitizer packs is easy. It is, in addition, enriched with Moisturizers that doesn’t let your hands dry up and leave them 99.9 percent germ-free. These sanitizer bottles are convenient to carry and can be placed anywhere from your pocket, purse or bag`,
+        product_category:` Masks & Sanitizers `,
     },
 
 ]
