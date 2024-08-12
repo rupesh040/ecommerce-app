@@ -7,6 +7,10 @@ import Cart from '../components/Cart';
 
 const Catenavbar = ({category}) => {
     const [stickyClass, setStickyClass] = useState('');
+    const [opencart, setopencart] = useState(true);
+    const navcart = () => {
+        setopencart(prev => !prev);
+    }
     useEffect(() => {
       window.addEventListener('scroll', stickNavbar);
       return () => window.removeEventListener('scroll', stickNavbar);
@@ -26,10 +30,11 @@ const Catenavbar = ({category}) => {
 
 <div className="flex flex-row gap-3 items-center">
 <Link href="/search" className='w-[100%]'><i class="ri-search-line py-2 px-2 text-xl bg-white rounded-full cursor-pointer"></i></Link>
-<i class="ri-shopping-cart-line py-1 px-2 text-xl bg-white rounded-full cursor-pointer"></i></div>
+<i class="ri-shopping-cart-line py-1 px-2 text-xl bg-white rounded-full cursor-pointer" onClick={navcart}></i></div>
 
 </nav>
-<Cart/>
+{!opencart?
+<Cart close={navcart} />:null}
 </>
   )
 }

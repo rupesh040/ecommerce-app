@@ -68,7 +68,7 @@ const page = ({params}) => {
             <p className='text-[12px] text-zinc-500 pb-3'>(Inclusive of all taxes)</p></div>
             {  !cartItems[data.id]?<button className='font-semibold text-[13px] bg-blue-500 text-white py-[5px] px-[18px] rounded-lg border-[1px] border-blue-500 w-[100px] h-[40px] ' onClick={ () => addCart(data.id)}>ADD</button>:
                     <div className='flex flex-row  justify-around items-center rounded-lg gap-1 px-1 py-[4px]  w-[100px] h-[40px] bg-blue-500 text-white'>
-                    <i class="ri-subtract-line cursor-pointer px-1  text-[14px]  rounded-md" onClick={ () => removeCart(id)}></i>
+                    <i class="ri-subtract-line cursor-pointer px-1  text-[14px]  rounded-md" onClick={ () => removeCart(data.id)}></i>
                     <p className='text-[15px]'>{cartItems[data.id]}</p>
                     <i class="ri-add-line cursor-pointer px-1 text-[14px]  rounded-md" onClick={ () => addCart(data.id)}></i>
                     </div>

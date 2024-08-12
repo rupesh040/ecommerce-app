@@ -4,13 +4,13 @@ import React, { useContext, useState } from 'react'
 import Link from 'next/link'
 import  { StoreContext } from '../context/StoreContext';
 
-const Cart = ({change}) => {
+const Cart = ({change,close}) => {
     const {product_data,cartItems,addCart,removeCart} = useContext(StoreContext);
   return (
     <>
     <div className=" fixed top-0 right-0 w-[400px] h-full bg-[#F5F7FD] z-20 p-5 max-[600px]:w-full ">
         <div className=" flex justify-between ">
-        <h1 className='font-semibold'>My Cart </h1><i class="ri-close-line text-xl font-semibold cursor-pointer" onClick={change}></i>
+        <h1 className='font-semibold'>My Cart </h1><i class="ri-close-line text-xl font-semibold cursor-pointer "  onClick={close}></i>
         </div>
         <div className="cro w-full h-[80%] bg-white  rounded-xl my-5 overflow-y-auto flex flex-col flex-nowrap pb-28">
             {
@@ -18,7 +18,8 @@ const Cart = ({change}) => {
                     if(cartItems[item.id]>0){
                     return(    <div className=" flex items-center gap-3 p-3 justify-between">
                         <div className=" flex gap-3">
-                        <img src={item.img}alt="" className='w-20 h-20 border-[1px] border-zinc-200 rounded-xl'/>
+                        <Link href={`/product/${item.id}`}>
+                        <img src={item.img}alt="" className='w-20 h-20 border-[1px] border-zinc-200 rounded-xl'/></Link>
                         <div className="flex flex-col gap-2">
                         <p className='text-[13px] max-w-[150px]'>{item.name}</p>
                         <div className="flex items-center gap-4">
