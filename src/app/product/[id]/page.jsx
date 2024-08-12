@@ -3,7 +3,6 @@ import Navbar from '@/app/components/Navbar'
 import React, { useEffect, useState } from 'react'
 import 'remixicon/fonts/remixicon.css';
 import { product_data } from "../../../../Data/data";
-import Btn from '@/app/components/Btn';
 import "./page.css";
 import Image from 'next/image';
 import ProductCarousel from '@/app/components/ProductCarousel';

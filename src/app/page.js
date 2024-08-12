@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Link from "next/link";
 import { product_data } from "../../Data/data";
 import Product from "./components/Product";
+import Cart from "./components/Cart";
 
 export default function Home() {
 
