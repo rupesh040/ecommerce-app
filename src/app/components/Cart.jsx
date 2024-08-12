@@ -5,10 +5,10 @@ import Link from 'next/link'
 import  { StoreContext } from '../context/StoreContext';
 
 const Cart = ({change}) => {
-    const {product_data,cartItems,addCart,removeCart} = useContext(StoreContext)
+    const {product_data,cartItems,addCart,removeCart} = useContext(StoreContext);
   return (
     <>
-    <div className=" fixed top-0 right-0 w-[400px] h-full bg-[#F5F7FD] z-10 p-5 max-[600px]:w-full">
+    <div className=" fixed top-0 right-0 w-[400px] h-full bg-[#F5F7FD] z-20 p-5 max-[600px]:w-full ">
         <div className=" flex justify-between ">
         <h1 className='font-semibold'>My Cart </h1><i class="ri-close-line text-xl font-semibold cursor-pointer" onClick={change}></i>
         </div>
@@ -22,7 +22,7 @@ const Cart = ({change}) => {
                         <div className="flex flex-col gap-2">
                         <p className='text-[13px] max-w-[150px]'>{item.name}</p>
                         <div className="flex items-center gap-4">
-                        <p className='font-semibold'>₹{item.price}</p>
+                        <p className='font-semibold'>₹{item.price*cartItems[item.id]}</p>
                         <p className='text-[12px] text-zinc-400'>{item.weight}</p></div>
 
                         </div>
@@ -43,13 +43,13 @@ const Cart = ({change}) => {
         </div>
         <div className="mb-4 flex bg-white rounded-xl p-3 items-center justify-between">
             <div className="  ">
-            <h1 className='font-semibold'>₹1000</h1>
+            <h1 className='font-semibold'>₹</h1>
             <p className='text-[12px] text-zinc-400'>TOTAL</p>
             </div>
             <div className=" flex flex-row items-center">Proceed<i class="ri-arrow-right-s-line"></i></div>
         </div>
     </div>
-    <div className="fixed w-full h-full bg-black opacity-20 top-0" onClick={change}></div>
+    <div className="fixed w-full h-full bg-black opacity-20 top-0 z-10" onClick={change}></div>
     </>
   )
 }
