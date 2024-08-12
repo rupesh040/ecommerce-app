@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import Address from './Address';
 
 const Account = ({add,location}) => {
     const [trues,setTrues] = useState(false);
   return (
     <div className=' account w-[250px]  bg-white rounded-2xl absolute  mx-5 my-2 border-[1px] border-zinc-300 flex justify-between flex-col  z-20'>
-        {!trues?<h2 className='py-3 px-4 border-b-[1px] border-zinc-300 font-bold cursor-pointer' onClick={location}>My Account</h2>:<h2 className='py-3 px-4 border-b-[1px] border-zinc-300 font-bold cursor-pointer'>My Address</h2>}
+        {!trues?<h2 className='py-3 px-4 border-b-[1px] border-zinc-300 font-bold cursor-pointer' >My Account</h2>:<h2 className='py-3 px-4 border-b-[1px] border-zinc-300 font-bold cursor-pointer'>My Address</h2>}
        {!trues? <div className=' flex flex-col'>
             <h2 className='hover:bg-zinc-100 py-2 px-4 cursor-pointer hover:px-6 transition-all ease-in-out'><i class="ri-user-line"></i> Profile</h2>
             <h2 className='hover:bg-zinc-100 py-2 px-4 cursor-pointer hover:px-6 transition-all ease-in-out'><i class="ri-draggable"></i> My order</h2>
