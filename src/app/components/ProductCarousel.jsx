@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
+"use client"
+import React, { useContext, useEffect, useState } from 'react'
 import Product from './Product';
-import { product_data } from "../../../Data/data";
-const ProductCarousel  = () => {
+import { StoreContext } from '../context/StoreContext';
+import Link from 'next/link';
+
+const ProductCarousel  = ({category,id}) => {
+    const {product_data} = useContext(StoreContext)
   return (
     <>
     <div className="flex justify-between max-w-[1180px] py-1 px-3 mx-auto">
-<h1 className="font-bold text-2xl">Snacks & Munchies </h1>
-<a className="text-blue-500 "> see all</a></div>
+<h1 className="font-bold text-2xl">{category} </h1>
+<Link href={`/categoryproduct/${id}`} className="text-blue-500 "> see all</Link></div>
     <div className=' cro max-w-[1180px]   mx-auto flex gap-3 flex-nowrap  overflow-x-scroll p-5'>
-        {
-            product_data.map((item,ind) => {
+    {
+            product_data.filter((elem) => String(category) === elem.category?true:"").map((item,ind) => {
                 return <Product key={ind} id={item.id} img={item.img} name={item.name} weight={item.weight} price={item.price} />
             })
         }

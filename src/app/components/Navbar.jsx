@@ -3,16 +3,12 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Account from './Account';
 import Overlay from './Overlay';
-import Cart from './Cart';
+
 
 
 const Navbar = () => {
     const [logIn ,setLogIn] = useState(true);
     const [overlay ,setOverlay] = useState(false);
-    const [myCart ,setMyCart] = useState(true);
-    const cahngeCart = () => {
-        setMyCart(prevStatev => !prevStatev);
-    }
     const trueFalse = () =>{
         setOverlay(prevState => !prevState);
         location();
@@ -106,12 +102,10 @@ const Navbar = () => {
        <i class="ri-search-2-line text-black cursor-pointer text-xl active:scale-90"></i>
       </div>
 
-      <div className="cart  flex gap-5 items-center justify-center">{!logIn? <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer">Login</div> : <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer" onClick={trueFalse}>Account</div> } <i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer" onClick={cahngeCart}></i></div>
+      <div className="cart  flex gap-5 items-center justify-center">{!logIn? <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer">Login</div> : <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer" onClick={trueFalse}>Account</div> } <Link href={"/cart"}> <i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer"  ></i></Link></div>
     </nav>
-    {!overlay?null:<Account add={geo.formatted} location={location} cart={cahngeCart} />}
+    {!overlay?null:<Account add={geo.formatted} location={location} />}
     {!overlay?null:<Overlay btn={trueFalse} />}
-{!myCart?
-<Cart change={cahngeCart} />:null}
 
     </>
   )

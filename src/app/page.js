@@ -12,8 +12,8 @@ import ProductCarousel from "./components/ProductCarousel";
 import Footer from "./components/Footer";
 import Link from "next/link";
 import { product_data } from "../../Data/data";
-import Product from "./components/Product";
-import Cart from "./components/Cart";
+import { cate_data } from "../../Data/category";
+
 
 export default function Home() {
 
@@ -23,8 +23,13 @@ export default function Home() {
 <Banner/>
 <Carousel/>
 <Catecard/>
-<ProductCarousel/>
-<ProductCarousel/>
+{
+    cate_data.map((item) => {
+        return <ProductCarousel id={item.id} category={item.category_name}/>
+    })
+}
+
+
 <Footer/>
   </>
   );

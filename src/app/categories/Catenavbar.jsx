@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import "./page.css";
 import 'remixicon/fonts/remixicon.css';
-import Cart from '../components/Cart';
 
 const Catenavbar = ({category}) => {
     const [stickyClass, setStickyClass] = useState('');
@@ -30,11 +29,10 @@ const Catenavbar = ({category}) => {
 
 <div className="flex flex-row gap-3 items-center">
 <Link href="/search" className='w-[100%]'><i class="ri-search-line py-2 px-2 text-xl bg-white rounded-full cursor-pointer"></i></Link>
-<i class="ri-shopping-cart-line py-1 px-2 text-xl bg-white rounded-full cursor-pointer" onClick={navcart}></i></div>
+<Link href={"/cart"}>
+<i class="ri-shopping-cart-line py-1 px-2 text-xl bg-white rounded-full cursor-pointer" ></i></Link></div>
 
 </nav>
-{!opencart?
-<Cart close={navcart} />:null}
 </>
   )
 }
