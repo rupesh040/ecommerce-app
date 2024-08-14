@@ -15,7 +15,7 @@ const page = () => {
         <div className=" flex justify-between ">
         <h1 className='font-semibold'>My Cart </h1><i class="ri-close-line text-xl font-semibold cursor-pointer "  onClick={()=> window.history.back()} ></i>
         </div>
-        <div className="cro w-full h-[80%] bg-white  rounded-xl my-5 overflow-y-auto flex flex-col flex-nowrap pb-28">
+        <div className="cro w-full h-[75%] bg-white  rounded-xl my-5 overflow-y-auto flex flex-col flex-nowrap pb-28">
             {
                 product_data.map((item,index) => {
                     if(cartItems[item.id]>0){
