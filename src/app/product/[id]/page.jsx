@@ -1,5 +1,4 @@
 "use client"
-import Navbar from '@/app/components/Navbar'
 import React, { useContext, useEffect, useState } from 'react'
 import 'remixicon/fonts/remixicon.css';
 import { product_data } from "../../../../Data/data";
@@ -8,11 +7,13 @@ import Image from 'next/image';
 import ProductCarousel from '@/app/components/ProductCarousel';
 import Catenavbar from '@/app/categories/Catenavbar';
 import { StoreContext } from '@/app/context/StoreContext';
+import Link from 'next/link';
+import Footer from '@/app/components/Footer';
 
 
 
 const page = ({params}) => {
-    const {cartItems,addCart,removeCart} = useContext(StoreContext)
+    const {cartItems,addCart,removeCart} = useContext(StoreContext);
     const [data, setData] = useState({});
     const fetchproductData = () => {
       for (let i = 0; i < product_data.length; i++) {
@@ -34,7 +35,8 @@ const page = ({params}) => {
         <div className="left w-[50%] flex  justify-center ">
             <div className=" leftmain w-full border-b-[1px] border-zinc-300 flex justify-center ">
             <img src={data.img} alt="" className='w-[480px] py-5 z-[3]'/></div>
-        <div className="hide">
+        <div className="hides" >
+            <div className=" scroll">
        <h1 className='text-2xl py-3 font-bold'>Product Detail</h1>
         <p className='pt-5 pb-3 font-semibold'>Key Features</p>
         <p className='text-zinc-600 text-[14px] w-[80%]'>{data.Key_Features}</p>
@@ -49,7 +51,7 @@ const page = ({params}) => {
 <p className='pt-5 pb-1 font-semibold'>Description</p>
 <p className='text-zinc-500 text-[14px] w-[80%]'>{data.Description}</p>
 <p className='pt-5 pb-1 font-semibold'>Disclaimer</p>
-<p className='text-zinc-500 text-[14px] w-[80%]'>Every effort is made to maintain accuracy of all information. However, actual product packaging and materials may contain more or different information. It is recommended not to solely rely on the information presented.</p></div>
+<p className='text-zinc-500 text-[14px] w-[80%]'>Every effort is made to maintain accuracy of all information. However, actual product packaging and materials may contain more or different information. It is recommended not to solely rely on the information presented.</p></div></div>
         </div>
         <div className={`  right    border-l-[1px] border-zinc-200  relative   `} >
             <div className={` rightmain sticky top-0 `}>
@@ -57,7 +59,7 @@ const page = ({params}) => {
         <p className='text-zinc-600 text-[13px] '>Home / {data.product_category} / {data.name}</p>
         <h1 className='text-[25px] font-bold py-2'>{data.name}</h1>
         <span className='text-[12px] font-semibold text-zinc-500'><i class="ri-timer-2-line text-[12px] text-green-600"></i> 10 MINs</span>
-        <h1 className='font-semibold py-2 text-blue-500 cursor-pointer'>View all <i class="ri-arrow-right-s-fill "></i>
+          <h1 className='font-semibold py-2 text-blue-500 cursor-pointer' >View Details <i class="ri-arrow-right-s-fill "></i>
         </h1>
         </div>
          <p className='text-zinc-500 text-[13px] py-2'>{data.weight}</p>
@@ -105,11 +107,9 @@ const page = ({params}) => {
         </div>
     </div>
     <div className="pt-[50px]">
-        <ProductCarousel/>
+        <ProductCarousel category={data.category} id={data.id}/>
     </div>
-    <div className="pt-[50px]">
-        <ProductCarousel/>
-    </div>
+    <Footer/>
     </>
   )
 }

@@ -15,7 +15,7 @@ const page = () => {
         <div className=" flex justify-between ">
         <h1 className='font-semibold'>My Cart </h1><i class="ri-close-line text-xl font-semibold cursor-pointer "  onClick={()=> window.history.back()} ></i>
         </div>
-        <div className="cro w-full h-[75%] bg-white  rounded-xl my-5 overflow-y-auto flex flex-col flex-nowrap pb-28">
+        <div className="cro w-full h-[80%] bg-white  rounded-xl my-5 overflow-y-auto flex flex-col flex-nowrap pb-28">
             {
                 product_data.map((item,index) => {
                     if(cartItems[item.id]>0){
@@ -32,8 +32,8 @@ const page = () => {
                         </div>
                         </div>
                         {
-                    !cartItems[item.id]?<button className='font-semibold text-[13px] bg-blue-100 text-blue-700 py-[5px] px-[18px] rounded-lg border-[1px] border-blue-500 w-[66px] h-[31]' onClick={ () => addCart(item.id)}>ADD</button>:
-                    <div className='flex flex-row bg-blue-200 items-center rounded-lg gap-1 px-1 py-[4px]  w-[75px] h-[31]'>
+                    !cartItems[item.id]?<button className='font-semibold text-[13px] bg-blue-500 text-white py-[5px] px-[18px] rounded-lg border-[1px] border-blue-500 w-[100px] h-[40px] ' onClick={ () => addCart(item.id)}>ADD</button>:
+                    <div className='flex flex-row  justify-around items-center rounded-lg gap-1 px-1 py-[4px]  w-[100px] h-[40px] bg-blue-500 text-white'>
                     <i class="ri-subtract-line cursor-pointer px-1  text-[14px]  rounded-md" onClick={ () => removeCart(item.id)}></i>
                     <p className='text-[15px]'>{cartItems[item.id]}</p>
                     <i class="ri-add-line cursor-pointer px-1 text-[14px]  rounded-md" onClick={ () => addCart(item.id)}></i>
