@@ -25,10 +25,21 @@ padding: 48px 0 ;
     margin-bottom: 20px;
     padding-bottom: 12px;
 }
+.phone{
+    display: none;
+}
 @media (max-width:900px) {
+    .nameborder{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
     .hides{
 display: none;
 
+    }
+    .phone{
+        display: block;
+        padding-left: 20px;
     }
     /* .scroll{
         width: 100%;

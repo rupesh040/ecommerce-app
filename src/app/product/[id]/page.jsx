@@ -59,10 +59,10 @@ const page = ({params}) => {
         <p className='text-zinc-600 text-[13px] '>Home / {data.product_category} / {data.name}</p>
         <h1 className='text-[25px] font-bold py-2'>{data.name}</h1>
         <span className='text-[12px] font-semibold text-zinc-500'><i class="ri-timer-2-line text-[12px] text-green-600"></i> 10 MINs</span>
-          <h1 className='font-semibold py-2 text-blue-500 cursor-pointer' >View Details <i class="ri-arrow-right-s-fill "></i>
-        </h1>
         </div>
          <p className='text-zinc-500 text-[13px] py-2'>{data.weight}</p>
+         <p className='font-semibold min-[900px]:hidden'>₹{data.price} <span className='text-zinc-400 text-[12px] pl-1'>MRP <s>{data.dis_price}</s> </span> </p>
+         <p className='text-[12px] text-zinc-500 pb-3 min-[900px]:hidden'>(Inclusive of all taxes)</p>
         <div className="m-addCart flex justify-between ">
 
             <div className=" flex flex-col">
@@ -106,6 +106,23 @@ const page = ({params}) => {
         </div>
         </div>
     </div>
+    <div className=" phone">
+       <h1 className='text-2xl py-3 font-bold'>Product Detail</h1>
+        <p className='pt-5 pb-3 font-semibold'>Key Features</p>
+        <p className='text-zinc-600 text-[14px] w-[80%]'>{data.Key_Features}</p>
+<p className='pt-5 pb-1 font-semibold'>Unit</p>
+<p className='text-zinc-500 text-[14px]'>{data.weight}</p>
+<p className='pt-5 pb-1 font-semibold'>Type</p>
+<p className='text-zinc-500 text-[14px]'>{data.Type}</p>
+<p className='pt-5 pb-1 font-semibold'>Country of Origin</p>
+<p className='text-zinc-500 text-[14px]'>{data.Country_of_Origin}</p>
+<p className='pt-5 pb-1 font-semibold'>Return Policy</p>
+<p className='text-zinc-500 text-[14px] w-[80%]'>{data.Return_Policy}</p>
+<p className='pt-5 pb-1 font-semibold'>Description</p>
+<p className='text-zinc-500 text-[14px] w-[80%]'>{data.Description}</p>
+<p className='pt-5 pb-1 font-semibold'>Disclaimer</p>
+<p className='text-zinc-500 text-[14px] w-[80%]'>Every effort is made to maintain accuracy of all information. However, actual product packaging and materials may contain more or different information. It is recommended not to solely rely on the information presented.</p></div>
+
     <div className="pt-[50px]">
         <ProductCarousel category={data.category} id={data.id}/>
     </div>
