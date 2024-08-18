@@ -3,6 +3,7 @@ import 'remixicon/fonts/remixicon.css';
 import React, { useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { StoreContext } from '../context/StoreContext';
+import "./page.css";
 
 
 const page = () => {
@@ -10,12 +11,12 @@ const page = () => {
       let totalPrice = 0;
   return (
     <>
-    <div className="w-full h-full bg-[#F5F7FD]">
-    <div className=" h-[100vh] m-auto max-w-[1080px]   z-20 p-5 max-[600px]:w-full flex flex-col">
+    <div className="main w-full  bg-[#F5F7FD]">
+    <div className=" m-auto max-w-[1080px]   z-20 p-5 max-[600px]:w-full flex flex-col">
         <div className=" flex justify-between ">
         <h1 className='font-semibold'>My Cart </h1><i class="ri-close-line text-xl font-semibold cursor-pointer "  onClick={()=> window.history.back()} ></i>
         </div>
-        <div className="cro w-full  bg-white  rounded-xl my-5  flex flex-col overflow-y-auto max-h-[80%] ">
+        <div className="cro w-full  bg-white  rounded-xl mt-5  flex flex-col overflow-hidden ">
             <div className=" sticky top-0 bg-white flex border-b-[1px] border-zinc-200 p-4 justify-start items-center gap-2" ><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=180/assets/eta-icons/15-mins-filled.png" alt="" width={50} /> <div className=""> <p className='font-bold text-[16px]'> Free Delivery in 10 minutes</p> <p className='text-[11px]'>Shipment 0f All item</p> </div></div>
             {
                 product_data.map((item,index) => {
@@ -44,20 +45,21 @@ const page = () => {
                     }
                 })
             }
-            <div className=" flex flex-col gap-2  border-t-[1px] border-zinc-300">
+
+
+        </div>
+        <div className=" flex flex-col gap-2  border-t-[1px] border-zinc-300 border-dashed rounded-xl bg-white overflow-hidden mb-5">
                 <h2 className='font-bold px-3 py-2'> Bill details</h2>
                 <p className='flex justify-between text-[14px] px-3'> <span><i class="ri-bill-line pr-1"></i>Sub total </span> <spna>₹{totalPrice}</spna> </p>
                 <p className='flex justify-between text-[14px] px-3' > <span><i class="ri-truck-line pr-1"></i>Delivery charge </span> <spna> <s className='text-[11px] text-zinc-400'>₹49</s> Free</spna> </p>
-                <div className=" flex justify-between text-[15px] bg-blue-100 text-blue-500 p-3"> <p className='font-semibold'>Grand total</p> <p className='font-semibold'>₹{totalPrice}</p>  </div>
+                <div className=" flex justify-between text-[15px] bg-blue-100 text-blue-500 p-3 border-[1px] border-blue-300 border-dashed grand"> <p className='font-semibold'>Grand total</p> <p className='font-semibold'>₹{totalPrice}</p>  </div>
             </div>
-
-        </div>
-        <div className="mb-4 flex bg-white rounded-xl p-3 items-center justify-between  border-[1px] border-zinc-300 ">
+        <div className="mb-4 flex bg-blue-500 text-white rounded-xl p-3 items-center justify-between  proceed sticky bottom-3">
             <div className="  ">
             <h1 className='font-semibold'>₹{totalPrice}</h1>
-            <p className='text-[12px] text-zinc-400'>TOTAL</p>
+            <p className='text-[12px] text-zinc-200'>TOTAL</p>
             </div>
-            <div className=" flex flex-row items-center text-green-500">Proceed<i class="ri-arrow-right-s-line"></i></div>
+            <div className=" flex flex-row items-center text-white relative px-4 cursor-pointer">Proceed <i class="ri-arrow-right-s-line anime2 "></i><i class="ri-arrow-right-s-line anime"></i></div>
         </div>
     </div>
     </div>

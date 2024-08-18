@@ -10,7 +10,7 @@ const page = () => {
   return (
     <>
      <Catenavbar/>
-     <div className=" catebanner relative w-full overflow-hidden "><img src="https://t3.ftcdn.net/jpg/06/21/60/62/240_F_621606287_9hjs4rsn1lp8teuMrt969RoQLfyTr37N.jpg" alt="" className='w-full  fisrt'/>
+     <div className=" catebanner relative w-full overflow-hidden "><img src="https://img.freepik.com/free-vector/happy-raksha-bandhan-cultural-festival-classic-banner-design-vector_1055-18362.jpg?size=626&ext=jpg&ga=GA1.1.1061875891.1723555472&semt=ais_hybrid" alt="" className='w-full  fisrt'/>
      <img src="https://static.vecteezy.com/system/resources/previews/007/303/767/large_2x/raksha-bandhan-indian-festival-celebration-background-free-vector.jpg" alt="" className='w-full  second'/></div>
 
     </>
