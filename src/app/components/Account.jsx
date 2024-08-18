@@ -10,8 +10,6 @@ const Account = ({add,cart}) => {
         {!trues?<h2 className='py-3 px-4 border-b-[1px] border-zinc-300 font-bold cursor-pointer' >My Account</h2>:<h2 className='py-3 px-4 border-b-[1px] border-zinc-300 font-bold cursor-pointer'>My Address</h2>}
        {!trues? <div className=' flex flex-col'>
             <h2 className='hover:bg-zinc-100 py-2 px-4 cursor-pointer hover:px-6 transition-all ease-in-out'><i class="ri-user-line"></i> Profile</h2>
-
-            <Link href={"/cart"}> <h2 className='hover:bg-zinc-100 py-2 px-4 cursor-pointer hover:px-6 transition-all ease-in-out' ><i class="ri-draggable"></i> My Cart</h2></Link>
             <h2 className='hover:bg-zinc-100 py-2 px-4 cursor-pointer hover:px-6 transition-all ease-in-out' onClick={() => setTrues(true)}><i class="ri-map-pin-line"></i> Address</h2>
             <h2 className='hover:bg-zinc-100 py-2 px-4 cursor-pointer hover:px-6 transition-all ease-in-out'><i class="ri-settings-2-line"></i> Setting</h2>
 

@@ -12,7 +12,6 @@ const page = ({params}) => {
       for (let i = 0; i < cate_data.length; i++) {
         if (Number(params.id) === cate_data[i].id) {
           setData(cate_data[i]);
-          console.log(cate_data[i]);
           break;
         }
       }

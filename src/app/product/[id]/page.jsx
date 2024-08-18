@@ -9,28 +9,40 @@ import Catenavbar from '@/app/categories/Catenavbar';
 import { StoreContext } from '@/app/context/StoreContext';
 import Link from 'next/link';
 import Footer from '@/app/components/Footer';
+import { cate_data } from '../../../../Data/category';
 
 
 
 const page = ({params}) => {
     const {cartItems,addCart,removeCart} = useContext(StoreContext);
     const [data, setData] = useState({});
+    const [catedata, setCatedata] = useState({});
     const fetchproductData = () => {
       for (let i = 0; i < product_data.length; i++) {
         if (Number(params.id) === product_data[i].id) {
           setData(product_data[i]);
-          console.log(product_data[i]);
           break;
         }
       }
     };
-
+    const fetchcateData = () => {
+        for (let i = 0; i < cate_data.length; i++) {
+          if (data.category === cate_data[i].category_name) {
+            setCatedata(cate_data[i]);
+            break;
+          }
+        }
+      };
     useEffect(() => {
         fetchproductData();
     }, []);
+    setTimeout(() => {
+        fetchcateData();
+    }, 500);
   return (
     <>
 <Catenavbar category={data.Type}/>
+
     <div className=" main w-full max-w-[1200px] mx-auto flex  relative border-b-[1px] border-zinc-300 ">
         <div className="left w-[50%] flex  justify-center ">
             <div className=" leftmain w-full border-b-[1px] border-zinc-300 flex justify-center ">
@@ -61,7 +73,7 @@ const page = ({params}) => {
         <span className='text-[12px] font-semibold text-zinc-500'><i class="ri-timer-2-line text-[12px] text-green-600"></i> 10 MINs</span>
         </div>
          <p className='text-zinc-500 text-[13px] py-2'>{data.weight}</p>
-         <p className='font-semibold min-[900px]:hidden'>₹{data.price} <span className='text-zinc-400 text-[12px] pl-1'>MRP <s>{data.dis_price}</s> </span> </p>
+         <p className='font-semibold min-[900px]:hidden'>₹{data.price} <span className='text-zinc-400 text-[12px] pl-1'>MRP <s>₹{data.dis_price}</s> </span> </p>
          <p className='text-[12px] text-zinc-500 pb-3 min-[900px]:hidden'>(Inclusive of all taxes)</p>
         <div className="m-addCart flex justify-between ">
 
@@ -124,7 +136,7 @@ const page = ({params}) => {
 <p className='text-zinc-500 text-[14px] w-[80%]'>Every effort is made to maintain accuracy of all information. However, actual product packaging and materials may contain more or different information. It is recommended not to solely rely on the information presented.</p></div>
 
     <div className="pt-[50px]">
-        <ProductCarousel category={data.category} id={data.id}/>
+        <ProductCarousel category={data.category} id={catedata.id}/>
     </div>
     <Footer/>
     </>
