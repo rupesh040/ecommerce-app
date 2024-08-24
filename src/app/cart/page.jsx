@@ -3,7 +3,7 @@ import 'remixicon/fonts/remixicon.css';
 import React, { useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { StoreContext } from '../context/StoreContext';
-import "./page.css";
+import "./cart.css";
 
 
 const page = () => {

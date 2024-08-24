@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=New+Amsterdam&display=swap');
+.font1{
+    font-family: "Style Script", cursive;
+}
 .sticky-nav{
     position: fixed;
     top: 0;
@@ -33,3 +39,20 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 1
         display: none;
     }
  }
+
+.deco1{
+    transform-origin: top ;
+    animation: decoration 3s ease-in-out infinite alternate-reverse;
+}
+.deco2{
+    transform-origin: top ;
+    animation: decoration 3s ease-in-out infinite alternate-reverse;
+}
+@keyframes decoration {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
