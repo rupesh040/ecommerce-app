@@ -59,7 +59,8 @@ const page = ({params}) => {
 <p className='pt-5 pb-1 font-semibold'>Country of Origin</p>
 <p className='text-zinc-500 text-[14px]'>{data.Country_of_Origin}</p>
 <p className='pt-5 pb-1 font-semibold'>Return Policy</p>
-<p className='text-zinc-500 text-[14px] w-[80%]'>{data.Return_Policy}</p>
+<p className='text-zinc-500 text-[14px] w-[80%]'>This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
+In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.</p>
 <p className='pt-5 pb-1 font-semibold'>Description</p>
 <p className='text-zinc-500 text-[14px] w-[80%]'>{data.Description}</p>
 <p className='pt-5 pb-1 font-semibold'>Disclaimer</p>
@@ -129,7 +130,8 @@ const page = ({params}) => {
 <p className='pt-5 pb-1 font-semibold'>Country of Origin</p>
 <p className='text-zinc-500 text-[14px]'>{data.Country_of_Origin}</p>
 <p className='pt-5 pb-1 font-semibold'>Return Policy</p>
-<p className='text-zinc-500 text-[14px] w-[80%]'>{data.Return_Policy}</p>
+<p className='text-zinc-500 text-[14px] w-[80%]'>This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
+In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.</p>
 <p className='pt-5 pb-1 font-semibold'>Description</p>
 <p className='text-zinc-500 text-[14px] w-[80%]'>{data.Description}</p>
 <p className='pt-5 pb-1 font-semibold'>Disclaimer</p>

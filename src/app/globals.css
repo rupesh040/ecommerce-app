@@ -64,7 +64,7 @@ nav .logo i{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-    }
+}
     .account{
         top: 45px;
         right: -20px;
@@ -133,6 +133,3 @@ nav .logo i{
         display: none;
     }
 }
-
-
-

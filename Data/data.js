@@ -14,10 +14,9 @@ export const product_data = [
                        Lay’s is always on the lookout for the best flavours, cuts, and innovations that are guaranteed to bring a smile to your face.`,
         Type:"Potato Chips",
         Country_of_Origin:"India",
-        Return_Policy:`This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
-        In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Binge on these exquisite bites of pure Masala magic! With hints of cumin, coriander, chili powder, onion, and garlic, Lay’s India’s Magic Masala is a one-way ticket to a world of exploding flavours. Experience this one-of-a-kind snack and indulge in the boldness of the Masala spice blend. Lay's India’s Magic Masala chips are perfect for any occasion. From the quick snack breaks at work, to the impromptu get-togethers, this snack is perfect to binge on.`,
         product_category:`Chips & Crisps`,
+        cro_category:"",
     },
     {
         id:2,
@@ -37,6 +36,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Haldiram's Bhujia is a crispy crunchy snack, prepared using besan and mild spices. A delicious, easy on the palate namkeen that leaves you asking for more. Enjoy with your friends and family.`,
         product_category:`Chips & Crisps`,
+        cro_category:"",
     },
     {
         id:3,
@@ -55,6 +55,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`A spicy namkeen, Haldiram's Nut Cracker is wrapped in the layers of gram flour, spices and is deep fried that makes it deliciously brittle. It is perfectly accompanied by an ice-cold beverage`,
         product_category:`Namkeen Snacks`,
+        cro_category:"",
     },
     {
         id:4,
@@ -73,6 +74,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Doritos is the spark that ignites you to be bold. Tooth Rattling Crunch & Intense Flavours that ignite you to Seize the Moment & Release your inner boldness. If you are up to the challenge, grab a bag of DORITOS Nacho Cheese tortilla chips and get ready for the experience. Its a bold experience in snacking and beyond`,
         product_category:`Nachos`,
+        cro_category:"",
     },
     {
         id:5,
@@ -94,6 +96,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Who’s in for a roller coaster of spicy flavors and crunchy bites? If you feel like spicing up your day, you need a snack with character and Uncle Chipps Spicy Treat will surely do the trick. Made with high-quality thinly sliced potatoes and topped with mouth-watering seasoning, these chips are just exquisite and will make you come back for more. Enjoy watching your favorite programs with a bag of Uncle Chipps or have this delicious treat on your quick work break. These chips are just perfect to snack on and their irresistible flavor makes them the ideal go-to treat.`,
         product_category:`Chips & Crisps`,
+        cro_category:"",
     },
     {
         id:6,
@@ -115,6 +118,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Binge on these exquisite bites of pure Masala magic! With hints of cumin, coriander, chili powder, onion, and garlic, Lay’s India’s Magic Masala is a one-way ticket to a world of exploding flavours. Experience this one-of-a-kind snack and indulge in the boldness of the Masala spice blend. Lay's India’s Magic Masala chips are perfect for any occasion. From the quick snack breaks at work, to the impromptu get-togethers, this snack is perfect to binge on.`,
         product_category:`Chips & Crisps`,
+        cro_category:"",
     },
     {
         id:7,
@@ -136,6 +140,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Binge on these exquisite bites of pure Masala magic! With hints of cumin, coriander, chili powder, onion, and garlic, Lay’s India’s Magic Masala is a one-way ticket to a world of exploding flavours. Experience this one-of-a-kind snack and indulge in the boldness of the Masala spice blend. Lay's India’s Magic Masala chips are perfect for any occasion. From the quick snack breaks at work, to the impromptu get-togethers, this snack is perfect to binge on.`,
         product_category:`Chips & Crisps`,
+        cro_category:"",
     },
     {
         id:8,
@@ -155,6 +160,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Crax Crunchy Pipes Puffs :- Crax Crunchy Pipes Puffs are a unique and fun snack with a crunchy texture and a burst of flavor. These puffed snacks are shaped like pipes, making them enjoyable to eat and perfect for sharing with friends and family. These are great for parties, picnics, or a quick snack on the go. Satisfy your cravings with this delightful and tasty treat.`,
         product_category:`Chips & Crisps`,
+        cro_category:"",
     },
     {
         id:9,
@@ -175,6 +181,7 @@ export const product_data = [
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`With infections leading to diseases on the rise, it is our hands that transfer most of the germs by touching various viruses and microbes daily, though unintentionally. Washing your hands with soap and water is the best way to reduce the number of microbes on them. However, there can be situations where soap and/ or water are not available. In this situation where nothing else really helps, Dettol Hand Sanitizers can give you that protection and safety to ensure upto 99.99% Germ Protection. Simply apply a few drops of the disinfectant gel on your hand and rub them thoroughly and voila! You are protected! Your Trusted Dettol offers a new and improved Dettol Hand Sanitizer that is rinse free and non-sticky. It is specially formulated to protect you from 100 illness causing germs. With an easy application drop bottle, you can protect yourself & your family from a wide range of illness causing germs anytime, anywhere without soap or water. The great thing with the new and improved hand sanitizers by Dettol is that it comes in exciting two variants - floral and spring fresh. So now, apart from being clean and fresh, you also have superb smelling hands. Keeping germs at bay with Dettol’s on-the-go instant hand sanitizer packs is easy. It is, in addition, enriched with Moisturizers that doesn’t let your hands dry up and leave them 99.9 percent germ-free. These sanitizer bottles are convenient to carry and can be placed anywhere from your pocket, purse or bag`,
         product_category:` Masks & Sanitizers `,
+        cro_category:"pharmacy",
     },
 
     {
@@ -195,6 +202,7 @@ Rich in calcium`,
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Amul Gold Full Cream Milk (Polypack) Milk is homogenized toned pasteurized milk. Rich and creamy, this milk is an excellent source of vitamin A and vitamin D that enhances growth and development of the body tissues and the brain.`,
         product_category:`Milk `,
+        cro_category:"Breakfast",
     },
 
 
@@ -213,6 +221,7 @@ Rich in calcium`,
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Potato is a starchy vegetable that is widely used in many recipes. Due to its bland taste, peeled potatoes can be mixed with a number of vegetables. Potatoes are also used in making chips and snacks.`,
         product_category:`Fresh Vegetables `,
+        cro_category:"Breakfast",
     },
 
     {
@@ -230,6 +239,7 @@ Rich in calcium`,
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Kiwi is a sweet and slightly tangy fruit. It has green flesh on the inside that lends a unique flavor and a tropical zing. Kiwis are packed with a lot of flavor and are an excellent source of nutrition`,
         product_category:`Exotics `,
+        cro_category:"Breakfast",
     },
 
     {
@@ -250,6 +260,7 @@ Each portion helps meet 15% of your daily iron requirement`,
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`MAGGI 2-minutes masala noodles have been a classic Indian snack for more than a decade. To take your favourite masala taste experience to the next level, introducing the new MAGGI special masala noodles, a recipe of 20 spices and herbs that provides a more redefined MAGGI masala experience.`,
         product_category:`Noodles `,
+        cro_category:"Breakfast",
     },
 
 
@@ -272,6 +283,7 @@ Perfect with pesto and tomato-based sauces.`,
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Make delicious macaroni at home in minutes with Weikfield Chef's Basket Pasta Macaroni. The macaroni is made from 100% Suji. It is rich in Protein and Fibre, which promote slow release of energy, keeping you active and satiated for a long period. It is non-sticky and has just the right bite, making it perfect for a scrumptious snack or meal.`,
         product_category:`Pasta  `,
+        cro_category:"Breakfast",
     },
 
     {
@@ -291,6 +303,7 @@ Ready to eat in 3 simple steps.`,
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Make delicious soup at home in minutes with Weikfield Chef's Basket Pasta Macaroni. The soup is made from 100% Suji. It is rich in Protein and Fibre, which promote slow release of energy, keeping you active and satiated for a long period. It is non-sticky and has just the right bite, making it perfect for a scrumptious snack or meal.`,
         product_category:`Soup  `,
+        cro_category:"Breakfast",
     },
     {
         id:16,
@@ -309,6 +322,7 @@ Ready to eat in 3 simple steps.`,
 Makes the perfect grab-and-go snack for instant energy
 Rich in Fibre`,
         product_category:` Energy Bars  `,
+        cro_category:"Breakfast",
     },
 
     {
@@ -331,6 +345,7 @@ Pack contains 18 units of 1 Finger breaks inside.`,
         Description:`HAVE A BREAK, HAVE A KITKAT!
 Share your favourite treats with your favourite people and indulge in the deliciousness of NESTLE KITKAT Minis! This share bag contains 18 units of KITKAT Minis, making it perfect for stocking up or passing around with friends and family. The iconic taste and texture of KitKat , combined with the crispiness of the wafer bar, will delight your senses and make your breaks delicious! Outer Packing may vary depending on stock availability`,
         product_category:`Chocolates  `,
+        cro_category:"Breakfast",
     },
 
 
@@ -351,6 +366,7 @@ Share your favourite treats with your favourite people and indulge in the delici
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Kuch meetha ho jaaye with Cadbury Celebrations. Filled with the goodness of Cadbury chocolates, like Cadbury Dairy Milk, the perfect gift for those whose presence makes every occasion perfect. Made with love, a chocolate box meant for gifting on every occasion- Rakhi, Birthday, or Diwali. This assorted chocolates gift pack contains Almonds, Cashews & Raisins enrobed in rich chocolate.`,
         product_category:`Chocolates  `,
+        cro_category:"Breakfast",
     },
 
     {
@@ -372,6 +388,7 @@ Tangy taste that goes well with every snack.`,
 A perfect dip for snacks and sandwiches.
 Tangy taste that goes well with every snack.`,
         product_category:`Tomato Ketchup  `,
+        cro_category:"Breakfast",
     },
     {
         id:20,
@@ -395,6 +412,7 @@ Adds extra Flavour to your favourite food.`,
 Fortune Soya Health Oil contains PUFA, which helps in reducing cholesterol levels.
 Your everyday meals prepared with Fortune soya health oil not only tastes better, but also make your bones stronger and heart healthier.`,
         product_category:`oil  `,
+        cro_category:"Breakfast",
     },
     {
         id:21,
@@ -414,6 +432,7 @@ Perfect balance of strength and flavour`,
         In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.`,
         Description:`Brookbond Taj Mahal Tea is a blend of expertly chosen tea leaves that bring a strong aroma and great taste together. Strong and refreshing, this tea is made from selected tea leaves that are blended to perfection to impart a natural goodness. This tea blend is tasted, graded and perfectly blended at the Brooke Bond Tea Excellence Centre to keep the authentic taste intact. The pack contains a unique flavour lock system to keep the aroma intact. Imparts a pleasing aura that cheers you up from within. Perfect balance of strength and flavour.`,
         product_category:`Leaf Tea  `,
+        cro_category:"Breakfast",
     },
 
 ]

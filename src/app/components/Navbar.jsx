@@ -82,7 +82,7 @@ const Navbar = () => {
   }
   return (
     <>
-    <nav className={` ${stickyClass} bg-white flex justify-between items-center  border-b-[1px] border-zinc-200 z-10`} >
+    <nav className={` ${stickyClass} bg-white flex justify-between items-center  border-b-[1px] border-zinc-200 z-10 w-full`} >
       <div className={` logo`} id={`${logosticky}`}>
         <Link href={"/"} className='text-4xl font-bold text'>Rupesh.</Link>
         <i class="ri-account-circle-fill text-4xl cursor-pointer" onClick={trueFalse}></i>
