@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useContext, useEffect, useState } from 'react';
 import Account from './Account';
 import Overlay from './Overlay';
+import LoginForm from './LoginForm';
 
 const Navbar = () => {
     const [logIn ,setLogIn] = useState(true);
@@ -10,6 +11,10 @@ const Navbar = () => {
     const trueFalse = () =>{
         setOverlay(prevState => !prevState);
         location();
+    }
+
+    const logout = () =>{
+        setLogIn(prevState => !prevState);
     }
     const[id,setId]=useState(0);
     const placeholders = [
@@ -101,10 +106,11 @@ const Navbar = () => {
     <Link href={"/cart"} className='relative min-[1080px]:hidden'>  <i class="ri-shopping-cart-line text-xl border-[1px] border-zinc-300 bg-zinc-100 py-3 px-4 rounded-lg cursor-pointer "></i> <p className='absolute text-[8px]  rounded-full font-bold top-[2px] right-[10px] text-white z-20'></p>
     <div className="w-4 z-10 h-4 bg-red-600 absolute text-[10px]  rounded-full  top-0 right-2 text-red-500 "></div> </Link>
 </div>
-      <div className="cart  flex gap-5 items-center justify-center">{!logIn? <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer">Login</div> : <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer" onClick={trueFalse}>Account</div> } <Link href={"/cart"}> <i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer"  ></i></Link></div>
+      <div className="cart  flex gap-5 items-center justify-center">{!logIn? <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer" onClick={()=>setShowLogIn(true)}>Login</div> : <div className="login bg-black text-white px-[20px] py-[7px] rounded-lg cursor-pointer" onClick={trueFalse}>Account</div> } <Link href={"/cart"}> <i class="ri-shopping-cart-line text-[20px] bg-black text-white px-[20px] py-[10px] rounded-lg cursor-pointer"  ></i></Link></div>
     </nav>
-    {!overlay?null:<Account add={geo.formatted} location={location} />}
+    {!overlay?null:<Account add={geo.formatted} location={location}  logout={logout}/>}
     {!overlay?null:<Overlay btn={trueFalse} />}
+
 
     </>
   )

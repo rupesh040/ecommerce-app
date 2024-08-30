@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Link from "next/link";
 import { product_data } from "../../Data/data";
 import { cate_data } from "../../Data/category";
+import LoginForm from "./components/LoginForm";
 
 
 export default function Home() {
@@ -28,8 +29,6 @@ export default function Home() {
         return <ProductCarousel id={item.id} category={item.category_name}/>
     })
 }
-
-
 <Footer/>
   </>
   );
