@@ -4,13 +4,16 @@ import React, { useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { StoreContext } from '../context/StoreContext';
 import "./cart.css";
-
+import Navbar from '../components/Navbar';
+import LoginForm from '../components/LoginForm';
 
 const page = () => {
-      const {product_data,cartItems,addCart,removeCart} = useContext(StoreContext);
+      const {product_data,cartItems,addCart,removeCart,token} = useContext(StoreContext);
       let totalPrice = 0;
+      const[show,setShow] = useState(false);
   return (
     <>
+<Navbar/>
     <div className="main w-full  bg-[#F5F7FD]">
     <div className=" m-auto max-w-[1080px]   z-20 p-5 max-[600px]:w-full flex flex-col">
         <div className=" flex justify-between ">
@@ -58,8 +61,10 @@ const page = () => {
             <div className="  ">
             <h1 className='font-semibold'>₹{totalPrice}</h1>
             <p className='text-[12px] text-zinc-200'>TOTAL</p>
-            </div>
-            <div className=" flex flex-row items-center text-white relative px-4 cursor-pointer">Proceed <i class="ri-arrow-right-s-line anime2 "></i><i class="ri-arrow-right-s-line anime"></i></div>
+            </div>{
+                token?<Link href={"/procced"} className=" flex flex-row items-center text-white relative px-4 cursor-pointer">Proceed <i class="ri-arrow-right-s-line anime2 "></i><i class="ri-arrow-right-s-line anime"></i></Link>:<div  className=" flex flex-row items-center text-white relative px-4 cursor-pointer" onClick={()=>alert("Please Login")}> Login<i class="ri-arrow-right-s-line anime2 "></i><i class="ri-arrow-right-s-line anime"></i></div>
+            }
+
         </div>
     </div>
     </div>
